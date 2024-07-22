@@ -1,41 +1,52 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://zhangyieco.github.io/</loc>
-  </url><url>
-    <loc>https://zhangyieco.github.io/research/childcare_quantity_quality/</loc>
-  </url><url>
-    <loc>https://zhangyieco.github.io/research/ccef/</loc>
-  </url><url>
-    <loc>https://zhangyieco.github.io/teaching/econ441_f16/</loc>
-  </url><url>
-    <loc>https://zhangyieco.github.io/research/family_risk/</loc>
-  </url><url>
-    <loc>https://zhangyieco.github.io/research/child_health_production/</loc>
-  </url><url>
-    <loc>https://zhangyieco.github.io/teaching/econ302_s16/</loc>
-  </url><url>
-    <loc>https://zhangyieco.github.io/research/making_summer_matter/</loc>
-  </url><url>
-    <loc>https://zhangyieco.github.io/research/hc_college_prospects/</loc>
-  </url><url>
-    <loc>https://zhangyieco.github.io/research/skills_savings_family/</loc>
-  </url><url>
-    <loc>https://zhangyieco.github.io/research/intergen_portchoice/</loc>
-  </url><url>
-    <loc>https://zhangyieco.github.io/research/marijuana/</loc>
-  </url><url>
-    <loc>https://zhangyieco.github.io/research/state_level_capital/</loc>
-  </url><url>
-    <loc>https://zhangyieco.github.io/teaching/econ102_f15/</loc>
-  </url><url>
-    <loc>https://zhangyieco.github.io/contact/</loc>
-  </url><url>
-    <loc>https://zhangyieco.github.io/notes/</loc>
-  </url><url>
-    <loc>https://zhangyieco.github.io/research/</loc>
-  </url><url>
-    <loc>https://zhangyieco.github.io/teaching/</loc>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://zhangyieco.github.io/</loc>
+  <lastmod>2024-07-22T04:56:17+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://zhangyieco.github.io/research/</loc>
+  <lastmod>2024-07-22T04:56:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zhangyieco.github.io/files/cv.pdf</loc>
+  <lastmod>2024-07-22T04:56:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zhangyieco.github.io/teaching/</loc>
+  <lastmod>2024-07-22T04:56:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zhangyieco.github.io/notes/</loc>
+  <lastmod>2024-07-22T04:56:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zhangyieco.github.io/contact/</loc>
+  <lastmod>2024-07-22T04:56:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zhangyieco.github.io/files/research/JAE_2021.pdf</loc>
+  <lastmod>2024-07-22T04:56:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zhangyieco.github.io/files/research/LTC_supply_sh.pdf</loc>
+  <lastmod>2024-07-22T04:56:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
