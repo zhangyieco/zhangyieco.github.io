@@ -135,18 +135,25 @@ body{
   border-radius:8px;
   text-decoration:none;
   line-height:1.2;
-  transition:all .18s ease;
   border:1px solid transparent;
   background:#fff;
   box-shadow:0 1px 2px rgba(0,0,0,.04);
+  transition:all .18s ease;
 }
 .paper-btn.pdf{
-  color:#1d4ed8;
+  background:#1d4ed8;     /* 固定蓝底白字，不要动画 */
+  color:#fff;
   border-color:#1d4ed8;
+  box-shadow:none;
+  transition:none;
 }
-.paper-btn.pdf:hover{
+.paper-btn.pdf:hover,
+.paper-btn.pdf:active,
+.paper-btn.pdf:focus{
   background:#1d4ed8;
   color:#fff;
+  box-shadow:none;
+  transform:none;
 }
 .paper-btn.ghost{
   color:#374151;
@@ -200,6 +207,7 @@ body{
   .section-title{font-size:24px;}
 }
 </style>
+
 
 <main class="content">
   <!-- English -->
