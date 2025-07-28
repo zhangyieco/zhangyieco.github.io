@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
@@ -98,8 +99,15 @@ body{
 .paper-title{
   font-size:20px;
   font-weight:600;
-  color:#1f2937;
   margin-bottom:16px;
+}
+.paper-title a{
+  color:#1f2937;
+  text-decoration:none;
+  border-bottom:1px solid transparent;
+}
+.paper-title a:hover{
+  border-bottom:1px solid #1f2937;
 }
 .paper-meta{
   color:#4b5563;
@@ -110,35 +118,8 @@ body{
   font-size:15px;
   line-height:1.6;
   color:#374151;
-  margin-bottom:16px;
+  margin-bottom:0;
 }
-
-/* ========= Simple Buttons (Bootstrap-like, no animation) ========= */
-.paper-actions{ margin-top:12px; display:flex; flex-wrap:wrap; gap:10px; }
-
-.btn{
-  display:inline-block;
-  padding:6px 14px;
-  font-size:13px;
-  line-height:1.2;
-  font-weight:500;
-  border-radius:6px;
-  text-decoration:none;
-  cursor:pointer;
-  border:1px solid transparent;
-  background:#fff;
-  color:#1d4ed8;
-  border-color:#1d4ed8;
-  transition:none;      /* no animation */
-  box-shadow:none;
-}
-.btn-sm{ padding:4px 10px; font-size:12px; }
-.btn-outline-primary:hover{
-  background:#1d4ed8;
-  color:#fff;
-}
-.my-1{ margin-top:.25rem; margin-bottom:.25rem; }
-.mr-1{ margin-right:.25rem; }
 
 /* ========= Footer ========= */
 .page-footer{
@@ -169,15 +150,14 @@ body{
   <h1 class="section-title">Publications (English)</h1>
 
   <div class="paper-card">
-    <div class="paper-title">The impact of parental migration on non-cognitive abilities of left behind children in northwestern China</div>
+    <div class="paper-title">
+      <a href="/files/research/JAE_2021.pdf" target="_blank" rel="noopener">
+        The impact of parental migration on non-cognitive abilities of left behind children in northwestern China
+      </a>
+    </div>
     <div class="paper-meta"><strong>Journal of Asian Economics (2021)</strong> — Han Liu, Fang Chang, Hannah Corn, <strong>Yi Zhang</strong>, Yaojiang Shi</div>
     <div class="paper-abstract">
       Despite the vast literature surrounding various aspects of left behind children (LBC)’s development in China, very few studies have examined the development of, and impact on their non-cognitive abilities as a result of parental migration. Using survey data consisting of 5002 eighth graders from 160 middle schools in northwestern China, this paper investigates how parental migration affects children’s non-cognitive abilities, as is measured by Big Five components of conscientiousness, extraversion, neuroticism, agreeableness, and openness, as well as children’s grit. We narrow our analysis to long run and short run migration subsamples and use the propensity score matching method to address the potential selection bias issue. Our results show that mother’s migration is particularly harmful to the development of children’s non-cognitive abilities, as mother is usually the primary caregiver and mother’s migration makes less economic contribution to the family. In the long run, LBC with migrant mother tend to have lower levels of conscientiousness and grit; they also have higher level of neuroticism (or lower level of emotional stability). In the short run, when mother migrates, children tend to have lower levels of conscientiousness, agreeableness and openness.
-    </div>
-    <div class="paper-actions">
-      <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/research/JAE_2021.pdf" target="_blank" rel="noopener">
-        PDF
-      </a>
     </div>
   </div>
 
@@ -185,15 +165,14 @@ body{
   <h1 class="section-title">Publications (Chinese)</h1>
 
   <div class="paper-card">
-    <div class="paper-title">长期护理保险与老年照护机构供给：基于S市试点的证据</div>
+    <div class="paper-title">
+      <a href="/files/research/LTC_supply_sh.pdf" target="_blank" rel="noopener">
+        长期护理保险与老年照护机构供给：基于S市试点的证据
+      </a>
+    </div>
     <div class="paper-meta"><strong>社会科学 (2021)</strong> — 余央央，<strong>张毅</strong>，封进</div>
     <div class="paper-abstract">
       引导照护供给资源合理配置是长护险制度可持续发展的关键问题之一。文章利用长护险某试点城市1152家照护机构数据，考察待遇给付模式对不同类型照护机构供给的影响。采用双重差分法的实证结果显示，优先针对居家照护提供待遇给付会引导此类机构供给率先增加。进一步，当长护险覆盖对象从城镇职工医保参保人扩大至城乡居民医保参保人时，郊区农村的居家照护机构供给随之增加，集中指数测度结果表明城乡配置不均有所缓解。文章研究表明，长护险对养老服务供给侧改革有积极作用，要进一步优化长护险制度，以提升养老服务供给能力。
-    </div>
-    <div class="paper-actions">
-      <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/research/LTC_supply_sh.pdf" target="_blank" rel="noopener">
-        PDF
-      </a>
     </div>
   </div>
 
@@ -217,32 +196,28 @@ body{
   <h1 class="section-title">Working Papers</h1>
 
   <div class="paper-card">
-    <div class="paper-title">社区图书资源与人力资本积累：中国新华书店扩张的证据</div>
+    <div class="paper-title">
+      <a href="/files/workingpapers/xinhua_bookstore.pdf" target="_blank" rel="noopener">
+        社区图书资源与人力资本积累：中国新华书店扩张的证据
+      </a>
+    </div>
     <div class="paper-meta"><strong>Working Paper (2025)</strong> — <strong>张毅</strong>，翁煜晗，刘倩</div>
     <div class="paper-abstract">
       采用队列双重差分策略识别新华书店进入对受教育年限和大学入学率的长期影响，尤其对女性与低教育家庭个体影响更大，是首次系统评估中国书店基础设施长期教育效应的研究。
     </div>
-    <div class="paper-actions">
-      <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/workingpapers/xinhua_bookstore.pdf" target="_blank" rel="noopener">
-        PDF
-      </a>
-    </div>
   </div>
 
-  
   <div class="paper-card">
-    <div class="paper-title">Pharmaceutical Reform and Retail Pharmacy Supply: Evidence from China’s Separation of Prescribing and Dispensing</div>
+    <div class="paper-title">
+      <a href="/files/workingpapers/pharma_reform_pharmacies.pdf" target="_blank" rel="noopener">
+        Pharmaceutical Reform and Retail Pharmacy Supply: Evidence from China’s Separation of Prescribing and Dispensing
+      </a>
+    </div>
     <div class="paper-meta"><strong>Working Paper (2025)</strong> — Yangyang Yu, Ying Zhai, <strong>Yi Zhang</strong></div>
     <div class="paper-abstract">
-      A central concern in pharmaceutical reform-particularly the separation of prescribing and dispensing-is its potential to reduce access to medicines. This paper provides the first evidence that retail pharmacy supply can expand in response to such reforms. Exploiting the staggered implementation of pharmaceutical reform across counties in China, we show that financial incentives induced by the reform significantly increased the net entry of retail pharmacies-by approximately 1.5 per county, or a 20 percent rise. The increase was larger in counties where the reform generated stronger financial incentives for retail pharmacies. Importantly, the supply response was concentrated in economically and medically better-resourced regions, highlighting potential unintended consequences for equity in access to medicines.
-    </div>
-    <div class="paper-actions">
-      <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/workingpapers/pharma_reform_pharmacies.pdf" target="_blank" rel="noopener">
-        PDF
-      </a>
+      A central concern in pharmaceutical reform—particularly the separation of prescribing and dispensing—is its potential to reduce access to medicines. This paper provides the first evidence that retail pharmacy supply can expand in response to such reforms. Exploiting the staggered implementation of pharmaceutical reform across counties in China, we show that financial incentives induced by the reform significantly increased the net entry of retail pharmacies—by approximately 1.5 per county (≈20%). The increase was larger in counties where the reform generated stronger financial incentives. The response concentrated in economically and medically better-resourced regions, highlighting potential unintended consequences for equity in access to medicines.
     </div>
   </div>
-
 
 </main>
 
