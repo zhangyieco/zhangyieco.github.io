@@ -61,10 +61,23 @@ body {
   background-color: #2563eb;
   color: #fff;
 }
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 40px 0;
+}
+.about-text {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
 .profile-pic {
-  float: right;
-  width: 180px;
-  margin: 0 0 20px 40px;
+  flex: 1;
+  max-width: 100%;
+  height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
@@ -85,12 +98,14 @@ body {
   </nav>
 </header>
 
-<img src="/profile.jpg" alt="Yi Zhang" class="profile-pic">
-
-<h2>About</h2>
-<p>I am a Ph.D. candidate in Social Security at Shanghai University of Finance and Economics (SUFE, 上海财经大学). My research interests are health economics and industrial organization. My dissertation discusses the impact of China's long-term care insurance on the entry decisions of service providers.</p>
-<p>You can contact me via email: zhangyieco at gmail dot com.</p>
-
+<div class="about-container">
+  <div class="about-text">
+    <h2>About</h2>
+    <p>I am a Ph.D. candidate in Social Security at Shanghai University of Finance and Economics (SUFE, 上海财经大学). My research interests are health economics and industrial organization. My dissertation discusses the impact of China's long-term care insurance on the entry decisions of service providers.</p>
+    <p>You can contact me via email: zhangyieco at gmail dot com.</p>
+  </div>
+  <img src="/profile.jpg" alt="Yi Zhang" class="profile-pic">
+</div>
     <h2>Publications</h2>
 
     <div class="paper-card">
