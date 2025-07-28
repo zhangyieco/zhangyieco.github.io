@@ -1,7 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+<title>Yi Zhang - </title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Yi Zhang">
+<meta name="generator" content="Hugo 0.92.2" />
+
+  
+  
+
+  <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\\[','\\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    menuSettings: { zoom: "Double-Click" },
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/javascript"
+  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="https://zhangyieco.github.io/css/tufte.css">
+<link rel="stylesheet" href="https://zhangyieco.github.io/css/hugo-tufte.css">
+<link rel="stylesheet" href="https://zhangyieco.github.io/css/hugo-tufte-override.css">
+
+</head>
+
+<body>
+<div id="layout" class="pure-g">
+<article class="pure-u-1">
+<header class="brand">
+  <h1>Yi Zhang</h1>
+  <h2>Ph.D. candidate</h2>
+  <nav class="menu">
+    <ul>
+    
+        <li><a href="/"><i class='fa fa-home fa-lg'></i> About</a></li>
+    
+        <li><a href="/research"><i class='fa fa-bar-chart fa-lg'></i> Research</a></li>
+    
+        <li><a href="/files/cv.pdf"><i class='fa fa-file fa-lg'></i> CV</a></li>
+    
+        <li><a href="/teaching"><i class='fa fa-book fa-lg'></i> Teaching</a></li>
+    
+        <li><a href="/notes"><i class='fa fa-pencil fa-lg'></i> Notes</a></li>
+    
+        <li><a href="/contact"><i class='fa fa-envelope fa-lg'></i> Contact</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+
+  <!-- ======= Research Section Start ======= -->
 <style>
-body {
-  background-color: rgb(255, 255, 247);
-}
+/* 仅作用于本页的卡片样式，不改 head */
+body { background-color: rgb(255, 255, 247); }
 .paper-card {
   border-radius: 12px;
   padding: 24px;
@@ -12,121 +89,84 @@ body {
   background-color: #fcfbf7;
   border-left: 5px solid #bfa76f;
 }
-.paper-card:nth-of-type(2n) {
-  background-color: #fdf9f3;
-  border-left: 5px solid #d97706;
-}
-.paper-card:nth-of-type(3n) {
-  background-color: #f4fef7;
-  border-left: 5px solid #6fbf73;
-}
-.paper-card:hover {
-  transform: translateY(-4px);
-}
-.paper-meta {
-  color: #4b5563;
-  font-size: 14px;
-  margin-bottom: 4px;
-}
-.paper-submeta {
-  color: #9ca3af;
-  font-size: 13px;
-  margin-bottom: 16px;
-}
-.paper-title {
-  font-size: 20px;
-  font-weight: 600;
-  color: #1f2937;
-  margin-bottom: 16px;
-}
-.paper-abstract {
-  font-size: 15px;
-  line-height: 1.6;
-  color: #374151;
-  margin-bottom: 16px;
-}
+.paper-card:nth-of-type(2n) { background-color: #fdf9f3; border-left: 5px solid #d97706; }
+.paper-card:nth-of-type(3n) { background-color: #f4fef7; border-left: 5px solid #6fbf73; }
+.paper-card:hover { transform: translateY(-4px); }
+.paper-meta { color: #4b5563; font-size: 14px; margin-bottom: 4px; }
+.paper-submeta { color: #9ca3af; font-size: 13px; margin-bottom: 16px; }
+.paper-title { font-size: 20px; font-weight: 600; color: #1f2937; margin-bottom: 16px; }
+.paper-abstract { font-size: 15px; line-height: 1.6; color: #374151; margin-bottom: 16px; }
 .paper-pdf {
-  display: inline-block;
-  padding: 6px 12px;
-  font-size: 13px;
-  border: 1px solid #2563eb;
-  color: #2563eb;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 500;
-  background-color: white;
+  display: inline-block; padding: 6px 12px; font-size: 13px;
+  border: 1px solid #2563eb; color: #2563eb; border-radius: 6px;
+  text-decoration: none; font-weight: 500; background-color: #fff;
   transition: all 0.2s ease;
 }
-.paper-pdf:hover {
-  background-color: #2563eb;
-  color: #fff;
-}
+.paper-pdf:hover { background-color: #2563eb; color: #fff; }
+.section-title { margin-top: 40px; margin-bottom: 22px; font-size: 26px; }
 </style>
 
-<header class="brand">
-  <h1>Yi Zhang</h1>
-  <h2>Ph.D. candidate</h2>
-  <nav class="menu">
-    <ul>
-        <li><a href="/"><i class='fa fa-home fa-lg'></i> About</a></li>
-        <li><a href="/research"><i class='fa fa-bar-chart fa-lg'></i> Research</a></li>
-        <li><a href="/files/cv.pdf"><i class='fa fa-file fa-lg'></i> CV</a></li>
-        <li><a href="/teaching"><i class='fa fa-book fa-lg'></i> Teaching</a></li>
-        <li><a href="/notes"><i class='fa fa-pencil fa-lg'></i> Notes</a></li>
-        <li><a href="/contact"><i class='fa fa-envelope fa-lg'></i> Contact</a></li>
-    </ul>
-  </nav>
-</header>
+<main class="content">
+  <h1 class="section-title">Publications (English)</h1>
 
-<h1><a>Publications in English</a></h1>
-
-<div class="paper-card">
-  <div class="paper-title">The impact of parental migration on non-cognitive abilities of left behind children in northwestern China</div>
-  <div class="paper-meta"><strong>Journal of Asian Economics (2021)</strong> Han Liu, Fang Chang, Hannah Corn, Yi Zhang , and Yaojiang Shi</div>
-  <a class="paper-pdf" href="/files/research/JAE_2021.pdf">Paper</a>
-  <div class="paper-abstract">Despite the vast literature surrounding various aspects of left behind children (LBC)’s development in China, very few studies have examined the development of, and impact on their non-cognitive abilities as a result of parental migration. Using survey data consisting of 5002 eighth graders from 160 middle schools in northwestern China, this paper investigates how parental migration affects children’s non-cognitive abilities, as is measured by Big Five components... [truncated for brevity]</div>
-</div>
-
-<h1><a>Publications in Chinese</a></h1>
-
-<div class="paper-card">
-  <div class="paper-title">长期护理保险与老年照护机构供给：基于S市试点的证据</div>
-  <div class="paper-meta"><strong>社会科学 (2021)</strong> 余央央，张毅，封进</div>
-  <a class="paper-pdf" href="/files/research/LTC_supply_sh.pdf">Paper</a>
-  <div class="paper-abstract">引导照护供给资源合理配置是长护险制度可持续发展的关键问题之一。文章利用长护险某试点城市1152家照护机构数据，考察待遇给付模式对不同类型照护机构供给的影响。采用双重差分法的实证结果显示...</div>
-</div>
-
-<div class="paper-card">
-  <div class="paper-title">整合型照护与医疗费用控制——基于“认知友好社区”试点的研究</div>
-  <div class="paper-meta"><strong>财经研究 (2024)</strong> 余央央，翟颖，张毅</div>
-  <div class="paper-abstract">整合型照护有助于提高医疗服务效率，其成为控制医疗费用过快增长的重要途径。文章利用“认知友好社区”试点，考察这一针对慢性病防治的整合型照护模式对医疗服务利用的影响，并进行福利分析...</div>
-</div>
-
-<div class="paper-card">
-  <div class="paper-title">长期护理保险的资源配置效应——基于制度激励与照护机构市场进入的研究</div>
-  <div class="paper-meta"><strong>经济学（季刊）(2025)</strong> 余央央，张毅，封进</div>
-  <div class="paper-abstract">本文从理论上刻画长护险对供方经济激励及市场进入的影响机理，并进行实证检验。研究发现长护险促进医疗类居家机构、养老院供给，不影响提供生活照料的社区机构供给，改善了“重生活照料、轻医疗护理”格局...</div>
-</div>
-
-<div class="paper-card">
-  <div class="paper-title">社区图书资源与人力资本积累：中国新华书店扩张的证据</div>
-  <div class="paper-meta"><strong>Working Paper (2025)</strong> 张毅，翁煜晗，刘倩</div>
-  <div class="paper-abstract">本文研究了社区图书资源可及性对个体长期教育结果的影响。采用队列双重差分策略识别新华书店在不同时期进入各地对受教育年限和大学入学概率的影响。研究结果表明，新华书店进入提升了人力资本积累，尤其对女性和来自低教育背景家庭的个体影响更大。该研究是首次系统评估中国书店基础设施对长期教育的因果影响。</div>
-</div>
-
-
-<footer class="page-footer">
-  <hr>
-  <ul class="page-footer-menu">
-    <li><a href="https://github.com/zhangyieco"><i class='fa fa-github fa-2x'></i> </a></li>
-  </ul>
-  <p>
-    Powered by <a href="https://gohugo.io">Hugo</a> and the
-    <a href="https://github.com/shawnohare/hugo-tufte">Tufte theme</a>.
-  </p>
-  <div class="copyright">
-    <p>
-      &copy; 2023 Yi Zhang. All rights reserved.
-    </p>
+  <div class="paper-card">
+    <div class="paper-title">The impact of parental migration on non-cognitive abilities of left behind children in northwestern China</div>
+    <div class="paper-meta"><strong>Journal of Asian Economics (2021)</strong> — Han Liu, Fang Chang, Hannah Corn, <strong>Yi Zhang</strong>, Yaojiang Shi</div>
+    <a class="paper-pdf" href="/files/research/JAE_2021.pdf">Paper</a>
+    <div class="paper-abstract">
+      Using survey data from 5,002 eighth graders in 160 middle schools in northwestern China, we examine how parental migration affects children’s non-cognitive abilities (Big Five). Results show...
+    </div>
   </div>
-</footer>
+
+  <h1 class="section-title">Publications (Chinese)</h1>
+
+  <div class="paper-card">
+    <div class="paper-title">长期护理保险与老年照护机构供给：基于S市试点的证据</div>
+    <div class="paper-meta"><strong>社会科学 (2021)</strong> — 余央央，<strong>张毅</strong>，封进</div>
+    <a class="paper-pdf" href="/files/research/LTC_supply_sh.pdf">Paper</a>
+    <div class="paper-abstract">
+      利用某长护险试点城市1152家照护机构数据，采用双重差分方法考察待遇给付模式对不同类型机构供给的影响。结果显示...
+    </div>
+  </div>
+
+  <div class="paper-card">
+    <div class="paper-title">整合型照护与医疗费用控制——基于“认知友好社区”试点的研究</div>
+    <div class="paper-meta"><strong>财经研究 (2024)</strong> — 余央央，翟颖，<strong>张毅</strong></div>
+    <div class="paper-abstract">
+      研究整合型照护模式对医疗服务利用与费用的影响，并进行福利分析，发现该模式有助于控制医疗费用上涨...
+    </div>
+  </div>
+
+  <div class="paper-card">
+    <div class="paper-title">长期护理保险的资源配置效应——基于制度激励与照护机构市场进入的研究</div>
+    <div class="paper-meta"><strong>经济学（季刊） (2025)</strong> — 余央央，<strong>张毅</strong>，封进</div>
+    <div class="paper-abstract">
+      理论刻画长护险对供方激励与市场进入的机制，并予以实证检验。结果表明，长护险促进医疗类居家机构与养老院供给，未显著影响生活照料型社区机构，改善了“重生活照料、轻医疗护理”格局...
+    </div>
+  </div>
+
+  <h1 class="section-title">Working Papers</h1>
+
+  <div class="paper-card">
+    <div class="paper-title">社区图书资源与人力资本积累：中国新华书店扩张的证据</div>
+    <div class="paper-meta"><strong>Working Paper (2025)</strong> — <strong>张毅</strong>，翁煜晗，刘倩</div>
+    <div class="paper-abstract">
+      采用队列双重差分策略识别新华书店进入对受教育年限和大学入学率的长期影响，尤其对女性与低教育家庭个体影响更大，是首次系统评估中国书店基础设施长期教育效应的研究。
+    </div>
+  </div>
+
+  <div class="paper-card">
+    <div class="paper-title">医药分开改革与药品可及性：来自中国零售药店进入的证据</div>
+    <div class="paper-meta"><strong>Working Paper (2025)</strong> — <strong>张毅</strong></div>
+    <div class="paper-abstract">
+      基于全国药店注册数据与改革时序，评估医药分开改革对药店进入行为的影响，并揭示政策激励机制与市场反应。
+    </div>
+  </div>
+
+</main>
+<!-- ======= Research Section End ======= -->
+
+</article>
+</div>
+</body>
+</html>
