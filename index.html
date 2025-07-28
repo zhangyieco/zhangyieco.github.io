@@ -1,119 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Yi Zhang">
-  <title>Yi Zhang - Personal Site</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <style>
-    body {
-      font-family: 'Georgia', serif;
-      background-color: rgb(255, 255, 247);
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2rem;
-      line-height: 1.6;
-    }
-    h1, h2, h3 {
-      color: #1f2937;
-    }
-    header h1 {
-      font-size: 2.2rem;
-      margin-bottom: 0.2rem;
-    }
-    header h2 {
-      font-size: 1.2rem;
-      font-weight: normal;
-      color: #6b7280;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      gap: 1rem;
-      margin-bottom: 2rem;
-    }
-    nav li a {
-      text-decoration: none;
-      color: #2563eb;
-    }
-    .paper-card {
-      border-radius: 12px;
-      padding: 24px;
-      margin-bottom: 30px;
-      background-color: #fcfbf7;
-      border-left: 5px solid #bfa76f;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-    }
-    .paper-card:nth-of-type(2n) {
-      background-color: #fdf9f3;
-      border-left: 5px solid #d97706;
-    }
-    .paper-card:nth-of-type(3n) {
-      background-color: #f4fef7;
-      border-left: 5px solid #6fbf73;
-    }
-    .paper-title {
-      font-size: 1.2rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-    }
-    .paper-meta {
-      color: #4b5563;
-      font-size: 0.9rem;
-      margin-bottom: 0.5rem;
-    }
-    .paper-abstract {
-      font-size: 0.95rem;
-      color: #374151;
-    }
-    .paper-pdf {
-      display: inline-block;
-      margin-top: 0.75rem;
-      padding: 6px 12px;
-      font-size: 13px;
-      border: 1px solid #2563eb;
-      color: #2563eb;
-      border-radius: 6px;
-      text-decoration: none;
-      background-color: white;
-    }
-    .paper-pdf:hover {
-      background-color: #2563eb;
-      color: #fff;
-    }
-    footer {
-      margin-top: 4rem;
-      padding-top: 2rem;
-      border-top: 1px solid #e5e7eb;
-      font-size: 0.85rem;
-      color: #6b7280;
-    }
-    .page-footer-menu {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      gap: 1rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Yi Zhang</h1>
-    <h2>Ph.D. candidate in Social Security, Shanghai University of Finance and Economics</h2>
-    <nav>
-      <ul>
-        <li><a href="/files/cv.pdf"><i class='fa fa-file'></i> CV</a></li>
-        <li><a href="mailto:zhangyieco@gmail.com"><i class='fa fa-envelope'></i> Email</a></li>
-        <li><a href="https://github.com/zhangyieco"><i class='fa fa-github'></i> GitHub</a></li>
-      </ul>
-    </nav>
-  </header>
+<style>
+body {
+  background-color: rgb(255, 255, 247);
+}
+.paper-card {
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 30px;
+  max-width: 860px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+  background-color: #fcfbf7;
+  border-left: 5px solid #bfa76f;
+}
+.paper-card:nth-of-type(2n) {
+  background-color: #fdf9f3;
+  border-left: 5px solid #d97706;
+}
+.paper-card:nth-of-type(3n) {
+  background-color: #f4fef7;
+  border-left: 5px solid #6fbf73;
+}
+.paper-card:hover {
+  transform: translateY(-4px);
+}
+.paper-meta {
+  color: #4b5563;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.paper-submeta {
+  color: #9ca3af;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+.paper-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 16px;
+}
+.paper-abstract {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #374151;
+  margin-bottom: 16px;
+}
+.paper-pdf {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 13px;
+  border: 1px solid #2563eb;
+  color: #2563eb;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  background-color: white;
+  transition: all 0.2s ease;
+}
+.paper-pdf:hover {
+  background-color: #2563eb;
+  color: #fff;
+}
+.profile-pic {
+  float: right;
+  width: 180px;
+  margin: 0 0 20px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+</style>
 
-  <section>
-    <p>Welcome. I am a Ph.D. candidate in Social Security at Shanghai University of Finance and Economics (SUFE, 上海财经大学). My research interests are health economics and industrial organization. My dissertation discusses the impact of China's long-term care insurance on the entry decisions of service providers.</p>
-    <p>You can contact me via email: <strong>zhangyieco [at] gmail [dot] com</strong>.</p>
+<header class="brand">
+  <h1>Yi Zhang</h1>
+  <h2>Ph.D. candidate</h2>
+  <nav class="menu">
+    <ul>
+        <li><a href="/"><i class='fa fa-home fa-lg'></i> About</a></li>
+        <li><a href="/research"><i class='fa fa-bar-chart fa-lg'></i> Research</a></li>
+        <li><a href="/files/cv.pdf"><i class='fa fa-file fa-lg'></i> CV</a></li>
+        <li><a href="/teaching"><i class='fa fa-book fa-lg'></i> Teaching</a></li>
+        <li><a href="/notes"><i class='fa fa-pencil fa-lg'></i> Notes</a></li>
+        <li><a href="/contact"><i class='fa fa-envelope fa-lg'></i> Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<img src="/profile.jpg" alt="Yi Zhang" class="profile-pic">
+
+<h2>About</h2>
+<p>I am a Ph.D. candidate in Social Security at Shanghai University of Finance and Economics (SUFE, 上海财经大学). My research interests are health economics and industrial organization. My dissertation discusses the impact of China's long-term care insurance on the entry decisions of service providers.</p>
+<p>You can contact me via email: zhangyieco at gmail dot com.</p>
 
     <h2>Publications</h2>
 
