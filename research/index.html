@@ -106,11 +106,6 @@ body{
   font-size:14px;
   margin-bottom:4px;
 }
-.paper-submeta{
-  color:#9ca3af;
-  font-size:13px;
-  margin-bottom:16px;
-}
 .paper-abstract{
   font-size:15px;
   line-height:1.6;
@@ -118,56 +113,32 @@ body{
   margin-bottom:16px;
 }
 
-/* ========= Buttons ========= */
-.paper-actions{
-  margin-top:12px;
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-}
-.paper-btn{
-  display:inline-flex;
-  align-items:center;
-  gap:6px;
+/* ========= Simple Buttons (Bootstrap-like, no animation) ========= */
+.paper-actions{ margin-top:12px; display:flex; flex-wrap:wrap; gap:10px; }
+
+.btn{
+  display:inline-block;
   padding:6px 14px;
   font-size:13px;
-  font-weight:500;
-  border-radius:8px;
-  text-decoration:none;
   line-height:1.2;
+  font-weight:500;
+  border-radius:6px;
+  text-decoration:none;
+  cursor:pointer;
   border:1px solid transparent;
   background:#fff;
-  box-shadow:0 1px 2px rgba(0,0,0,.04);
-  transition:all .18s ease;
-}
-.paper-btn.pdf{
-  background:#1d4ed8;     /* 固定蓝底白字，不要动画 */
-  color:#fff;
+  color:#1d4ed8;
   border-color:#1d4ed8;
+  transition:none;      /* no animation */
   box-shadow:none;
-  transition:none;
 }
-.paper-btn.pdf:hover,
-.paper-btn.pdf:active,
-.paper-btn.pdf:focus{
+.btn-sm{ padding:4px 10px; font-size:12px; }
+.btn-outline-primary:hover{
   background:#1d4ed8;
   color:#fff;
-  box-shadow:none;
-  transform:none;
 }
-.paper-btn.ghost{
-  color:#374151;
-  border-color:#d1d5db;
-}
-.paper-btn.ghost:hover{
-  border-color:#4b5563;
-  color:#111827;
-  background:#f9fafb;
-}
-.paper-btn i{
-  font-size:14px;
-  line-height:0;
-}
+.my-1{ margin-top:.25rem; margin-bottom:.25rem; }
+.mr-1{ margin-right:.25rem; }
 
 /* ========= Footer ========= */
 .page-footer{
@@ -183,21 +154,6 @@ body{
 .page-footer a:hover{
   text-decoration:underline;
 }
-.page-footer-menu{
-  list-style:none;
-  padding:0;
-  margin:0 0 10px 0;
-  display:flex;
-  justify-content:center;
-  gap:16px;
-}
-.page-footer-menu li a{
-  color:#374151;
-  transition:color .15s;
-}
-.page-footer-menu li a:hover{
-  color:#111827;
-}
 
 /* ========= Responsive ========= */
 @media (max-width:768px){
@@ -207,7 +163,6 @@ body{
   .section-title{font-size:24px;}
 }
 </style>
-
 
 <main class="content">
   <!-- English -->
@@ -220,8 +175,8 @@ body{
       Despite the vast literature surrounding various aspects of left behind children (LBC)’s development in China, very few studies have examined the development of, and impact on their non-cognitive abilities as a result of parental migration. Using survey data consisting of 5002 eighth graders from 160 middle schools in northwestern China, this paper investigates how parental migration affects children’s non-cognitive abilities, as is measured by Big Five components of conscientiousness, extraversion, neuroticism, agreeableness, and openness, as well as children’s grit. We narrow our analysis to long run and short run migration subsamples and use the propensity score matching method to address the potential selection bias issue. Our results show that mother’s migration is particularly harmful to the development of children’s non-cognitive abilities, as mother is usually the primary caregiver and mother’s migration makes less economic contribution to the family. In the long run, LBC with migrant mother tend to have lower levels of conscientiousness and grit; they also have higher level of neuroticism (or lower level of emotional stability). In the short run, when mother migrates, children tend to have lower levels of conscientiousness, agreeableness and openness.
     </div>
     <div class="paper-actions">
-      <a class="paper-btn pdf" href="/files/research/JAE_2021.pdf">
-        <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF
+      <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/research/JAE_2021.pdf" target="_blank" rel="noopener">
+        PDF
       </a>
     </div>
   </div>
@@ -236,8 +191,8 @@ body{
       引导照护供给资源合理配置是长护险制度可持续发展的关键问题之一。文章利用长护险某试点城市1152家照护机构数据，考察待遇给付模式对不同类型照护机构供给的影响。采用双重差分法的实证结果显示，优先针对居家照护提供待遇给付会引导此类机构供给率先增加。进一步，当长护险覆盖对象从城镇职工医保参保人扩大至城乡居民医保参保人时，郊区农村的居家照护机构供给随之增加，集中指数测度结果表明城乡配置不均有所缓解。文章研究表明，长护险对养老服务供给侧改革有积极作用，要进一步优化长护险制度，以提升养老服务供给能力。
     </div>
     <div class="paper-actions">
-      <a class="paper-btn pdf" href="/files/research/LTC_supply_sh.pdf">
-        <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF
+      <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/research/LTC_supply_sh.pdf" target="_blank" rel="noopener">
+        PDF
       </a>
     </div>
   </div>
@@ -268,12 +223,13 @@ body{
       采用队列双重差分策略识别新华书店进入对受教育年限和大学入学率的长期影响，尤其对女性与低教育家庭个体影响更大，是首次系统评估中国书店基础设施长期教育效应的研究。
     </div>
     <div class="paper-actions">
-      <a class="paper-btn pdf" href="/files/workingpapers/xinhua_bookstore.pdf">
-        <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF
+      <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/workingpapers/xinhua_bookstore.pdf" target="_blank" rel="noopener">
+        PDF
       </a>
     </div>
   </div>
 
+  
   <div class="paper-card">
     <div class="paper-title">Pharmaceutical Reform and Retail Pharmacy Supply: Evidence from China’s Separation of Prescribing and Dispensing</div>
     <div class="paper-meta"><strong>Working Paper (2025)</strong> — Yangyang Yu, Ying Zhai, <strong>Yi Zhang</strong></div>
@@ -281,11 +237,12 @@ body{
       A central concern in pharmaceutical reform-particularly the separation of prescribing and dispensing-is its potential to reduce access to medicines. This paper provides the first evidence that retail pharmacy supply can expand in response to such reforms. Exploiting the staggered implementation of pharmaceutical reform across counties in China, we show that financial incentives induced by the reform significantly increased the net entry of retail pharmacies-by approximately 1.5 per county, or a 20 percent rise. The increase was larger in counties where the reform generated stronger financial incentives for retail pharmacies. Importantly, the supply response was concentrated in economically and medically better-resourced regions, highlighting potential unintended consequences for equity in access to medicines.
     </div>
     <div class="paper-actions">
-      <a class="paper-btn pdf" href="/files/workingpapers/pharma_reform_pharmacies.pdf">
-        <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF
+      <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/workingpapers/pharma_reform_pharmacies.pdf" target="_blank" rel="noopener">
+        PDF
       </a>
     </div>
   </div>
+
 
 </main>
 
