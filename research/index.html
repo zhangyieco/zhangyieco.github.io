@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
 <head>
 <title>Yi Zhang - </title>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
@@ -11,10 +12,7 @@
 <meta name="author" content="Yi Zhang">
 <meta name="generator" content="Hugo 0.92.2" />
 
-  
-  
-
-  <script type="text/x-mathjax-config">
+<script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   tex2jax: {
     inlineMath: [['$','$'], ['\\(','\\)']],
@@ -24,7 +22,7 @@ MathJax.Hub.Config({
     menuSettings: { zoom: "Double-Click" },
     skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
     TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+           extensions: ["AMSmath.js", "AMSsymbols.js"] }
   }
 });
 </script>
@@ -33,19 +31,13 @@ MathJax.Hub.Config({
   src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
-
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
-
-
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
 
 <link rel="stylesheet" href="https://zhangyieco.github.io/css/tufte.css">
 <link rel="stylesheet" href="https://zhangyieco.github.io/css/hugo-tufte.css">
 <link rel="stylesheet" href="https://zhangyieco.github.io/css/hugo-tufte-override.css">
-
 </head>
 
 <body>
@@ -56,76 +48,190 @@ MathJax.Hub.Config({
   <h2>Ph.D. candidate</h2>
   <nav class="menu">
     <ul>
-    
         <li><a href="/"><i class='fa fa-home fa-lg'></i> About</a></li>
-    
         <li><a href="/research"><i class='fa fa-bar-chart fa-lg'></i> Research</a></li>
-    
         <li><a href="/files/cv.pdf"><i class='fa fa-file fa-lg'></i> CV</a></li>
-    
         <li><a href="/teaching"><i class='fa fa-book fa-lg'></i> Teaching</a></li>
-    
         <li><a href="/notes"><i class='fa fa-pencil fa-lg'></i> Notes</a></li>
-    
         <li><a href="/contact"><i class='fa fa-envelope fa-lg'></i> Contact</a></li>
-    
     </ul>
-</nav>
-
+  </nav>
 </header>
 
-
-  <!-- ======= Research Section Start ======= -->
+<!-- ======= Research Section Start ======= -->
 <style>
-/* 仅作用于本页的卡片样式，不改 head */
-body { background-color: rgb(255, 255, 247); }
-.paper-card {
-  border-radius: 12px;
-  padding: 24px;
-  margin-bottom: 30px;
-  max-width: 860px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-  transition: transform 0.2s ease;
-  background-color: #fcfbf7;
-  border-left: 5px solid #bfa76f;
+/* ========= Global (only this page) ========= */
+body{
+  background-color: rgb(255,255,247);
+  -webkit-font-smoothing: antialiased;
 }
-.paper-card:nth-of-type(2n) { background-color: #fdf9f3; border-left: 5px solid #d97706; }
-.paper-card:nth-of-type(3n) { background-color: #f4fef7; border-left: 5px solid #6fbf73; }
-.paper-card:hover { transform: translateY(-4px); }
-.paper-meta { color: #4b5563; font-size: 14px; margin-bottom: 4px; }
-.paper-submeta { color: #9ca3af; font-size: 13px; margin-bottom: 16px; }
-.paper-title { font-size: 20px; font-weight: 600; color: #1f2937; margin-bottom: 16px; }
-.paper-abstract { font-size: 15px; line-height: 1.6; color: #374151; margin-bottom: 16px; }
-.paper-pdf {
-  display: inline-block; padding: 6px 12px; font-size: 13px;
-  border: 1px solid #2563eb; color: #2563eb; border-radius: 6px;
-  text-decoration: none; font-weight: 500; background-color: #fff;
-  transition: all 0.2s ease;
+.section-title{
+  margin-top:40px;
+  margin-bottom:22px;
+  font-size:26px;
+  font-weight:600;
+  color:#1f2937;
 }
-.paper-pdf:hover { background-color: #2563eb; color: #fff; }
-.section-title { margin-top: 40px; margin-bottom: 22px; font-size: 26px; }
+
+/* ========= Paper Cards ========= */
+.paper-card{
+  border-radius:12px;
+  padding:24px;
+  margin-bottom:30px;
+  max-width:860px;
+  box-shadow:0 4px 10px rgba(0,0,0,.06);
+  transition:transform .2s ease, box-shadow .2s ease;
+  background-color:#fcfbf7;
+  border-left:5px solid #bfa76f;
+}
+.paper-card:nth-of-type(2n){
+  background-color:#fdf9f3;
+  border-left:5px solid #d97706;
+}
+.paper-card:nth-of-type(3n){
+  background-color:#f4fef7;
+  border-left:5px solid #6fbf73;
+}
+.paper-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+.paper-title{
+  font-size:20px;
+  font-weight:600;
+  color:#1f2937;
+  margin-bottom:16px;
+}
+.paper-meta{
+  color:#4b5563;
+  font-size:14px;
+  margin-bottom:4px;
+}
+.paper-submeta{
+  color:#9ca3af;
+  font-size:13px;
+  margin-bottom:16px;
+}
+.paper-abstract{
+  font-size:15px;
+  line-height:1.6;
+  color:#374151;
+  margin-bottom:16px;
+}
+
+/* ========= Buttons ========= */
+.paper-actions{
+  margin-top:12px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.paper-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  padding:6px 14px;
+  font-size:13px;
+  font-weight:500;
+  border-radius:8px;
+  text-decoration:none;
+  line-height:1.2;
+  transition:all .18s ease;
+  border:1px solid transparent;
+  background:#fff;
+  box-shadow:0 1px 2px rgba(0,0,0,.04);
+}
+.paper-btn.pdf{
+  color:#1d4ed8;
+  border-color:#1d4ed8;
+}
+.paper-btn.pdf:hover{
+  background:#1d4ed8;
+  color:#fff;
+}
+.paper-btn.ghost{
+  color:#374151;
+  border-color:#d1d5db;
+}
+.paper-btn.ghost:hover{
+  border-color:#4b5563;
+  color:#111827;
+  background:#f9fafb;
+}
+.paper-btn i{
+  font-size:14px;
+  line-height:0;
+}
+
+/* ========= Footer ========= */
+.page-footer{
+  margin:40px 0 20px;
+  text-align:center;
+  font-size:14px;
+  color:#6b7280;
+}
+.page-footer a{
+  color:#2563eb;
+  text-decoration:none;
+}
+.page-footer a:hover{
+  text-decoration:underline;
+}
+.page-footer-menu{
+  list-style:none;
+  padding:0;
+  margin:0 0 10px 0;
+  display:flex;
+  justify-content:center;
+  gap:16px;
+}
+.page-footer-menu li a{
+  color:#374151;
+  transition:color .15s;
+}
+.page-footer-menu li a:hover{
+  color:#111827;
+}
+
+/* ========= Responsive ========= */
+@media (max-width:768px){
+  .paper-card{padding:20px;}
+  .paper-title{font-size:18px;margin-bottom:12px;}
+  .paper-abstract{font-size:14px;}
+  .section-title{font-size:24px;}
+}
 </style>
 
 <main class="content">
+  <!-- English -->
   <h1 class="section-title">Publications (English)</h1>
 
   <div class="paper-card">
     <div class="paper-title">The impact of parental migration on non-cognitive abilities of left behind children in northwestern China</div>
     <div class="paper-meta"><strong>Journal of Asian Economics (2021)</strong> — Han Liu, Fang Chang, Hannah Corn, <strong>Yi Zhang</strong>, Yaojiang Shi</div>
-    <a class="paper-pdf" href="/files/research/JAE_2021.pdf">Paper</a>
     <div class="paper-abstract">
       Despite the vast literature surrounding various aspects of left behind children (LBC)’s development in China, very few studies have examined the development of, and impact on their non-cognitive abilities as a result of parental migration. Using survey data consisting of 5002 eighth graders from 160 middle schools in northwestern China, this paper investigates how parental migration affects children’s non-cognitive abilities, as is measured by Big Five components of conscientiousness, extraversion, neuroticism, agreeableness, and openness, as well as children’s grit. We narrow our analysis to long run and short run migration subsamples and use the propensity score matching method to address the potential selection bias issue. Our results show that mother’s migration is particularly harmful to the development of children’s non-cognitive abilities, as mother is usually the primary caregiver and mother’s migration makes less economic contribution to the family. In the long run, LBC with migrant mother tend to have lower levels of conscientiousness and grit; they also have higher level of neuroticism (or lower level of emotional stability). In the short run, when mother migrates, children tend to have lower levels of conscientiousness, agreeableness and openness.
     </div>
+    <div class="paper-actions">
+      <a class="paper-btn pdf" href="/files/research/JAE_2021.pdf">
+        <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF
+      </a>
+    </div>
   </div>
 
+  <!-- Chinese -->
   <h1 class="section-title">Publications (Chinese)</h1>
 
   <div class="paper-card">
     <div class="paper-title">长期护理保险与老年照护机构供给：基于S市试点的证据</div>
     <div class="paper-meta"><strong>社会科学 (2021)</strong> — 余央央，<strong>张毅</strong>，封进</div>
-    <a class="paper-pdf" href="/files/research/LTC_supply_sh.pdf">Paper</a>
     <div class="paper-abstract">
       引导照护供给资源合理配置是长护险制度可持续发展的关键问题之一。文章利用长护险某试点城市1152家照护机构数据，考察待遇给付模式对不同类型照护机构供给的影响。采用双重差分法的实证结果显示，优先针对居家照护提供待遇给付会引导此类机构供给率先增加。进一步，当长护险覆盖对象从城镇职工医保参保人扩大至城乡居民医保参保人时，郊区农村的居家照护机构供给随之增加，集中指数测度结果表明城乡配置不均有所缓解。文章研究表明，长护险对养老服务供给侧改革有积极作用，要进一步优化长护险制度，以提升养老服务供给能力。
+    </div>
+    <div class="paper-actions">
+      <a class="paper-btn pdf" href="/files/research/LTC_supply_sh.pdf">
+        <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF
+      </a>
     </div>
   </div>
 
@@ -145,6 +251,7 @@ body { background-color: rgb(255, 255, 247); }
     </div>
   </div>
 
+  <!-- Working Papers -->
   <h1 class="section-title">Working Papers</h1>
 
   <div class="paper-card">
@@ -153,6 +260,11 @@ body { background-color: rgb(255, 255, 247); }
     <div class="paper-abstract">
       采用队列双重差分策略识别新华书店进入对受教育年限和大学入学率的长期影响，尤其对女性与低教育家庭个体影响更大，是首次系统评估中国书店基础设施长期教育效应的研究。
     </div>
+    <div class="paper-actions">
+      <a class="paper-btn pdf" href="/files/workingpapers/xinhua_bookstore.pdf">
+        <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF
+      </a>
+    </div>
   </div>
 
   <div class="paper-card">
@@ -160,6 +272,11 @@ body { background-color: rgb(255, 255, 247); }
     <div class="paper-meta"><strong>Working Paper (2025)</strong> — Yangyang Yu, Ying Zhai, <strong>Yi Zhang</strong></div>
     <div class="paper-abstract">
       A central concern in pharmaceutical reform-particularly the separation of prescribing and dispensing-is its potential to reduce access to medicines. This paper provides the first evidence that retail pharmacy supply can expand in response to such reforms. Exploiting the staggered implementation of pharmaceutical reform across counties in China, we show that financial incentives induced by the reform significantly increased the net entry of retail pharmacies-by approximately 1.5 per county, or a 20 percent rise. The increase was larger in counties where the reform generated stronger financial incentives for retail pharmacies. Importantly, the supply response was concentrated in economically and medically better-resourced regions, highlighting potential unintended consequences for equity in access to medicines.
+    </div>
+    <div class="paper-actions">
+      <a class="paper-btn pdf" href="/files/workingpapers/pharma_reform_pharmacies.pdf">
+        <i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF
+      </a>
     </div>
   </div>
 
@@ -179,3 +296,4 @@ body { background-color: rgb(255, 255, 247); }
 </div>
 </body>
 </html>
+
