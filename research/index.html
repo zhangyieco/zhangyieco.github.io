@@ -87,8 +87,6 @@ body{
 .paper-card {
   border-radius: 12px;
   padding: 28px;
-  margin-bottom: 30px;
-  max-width: 860px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: #ffffff;
@@ -297,18 +295,7 @@ body{
   margin-bottom: 40px;
 }
 
-/* Update paper card for grid layout */
-.paper-card {
-  border-radius: 12px;
-  padding: 28px;
-  width: 100%;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #ffffff;
-  border: 1px solid #e5e7eb;
-  position: relative;
-  overflow: hidden;
-}
+
 
 /* ========= Footer ========= */
 .page-footer {
@@ -421,6 +408,7 @@ nav.menu ul li a.active {
   <!-- Chinese Publications -->
   <h2 class="section-subtitle">Chinese Publications</h2>
   
+  <div class="papers-grid">
   <div class="paper-card published">
     <div class="paper-badge badge-published">Published</div>
     <div class="paper-title">
@@ -486,10 +474,12 @@ nav.menu ul li a.active {
       </a>
     </div>
   </div>
+  </div>
 
   <!-- Working Papers Section -->
   <h1 class="section-title">Working Papers</h1>
   
+  <div class="papers-grid">
   <div class="paper-card working">
     <div class="paper-badge badge-working">Working Paper</div>
     <div class="paper-title">
@@ -554,6 +544,7 @@ nav.menu ul li a.active {
         PDF
       </a>
     </div>
+  </div>
   </div>
 
 </main>
