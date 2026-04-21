@@ -657,6 +657,190 @@ nav.menu ul li a.active {
     font-weight: 500;
   }
 
+  /* About Composite Layout */
+  .about-composite-layout {
+    display: flex;
+    gap: 60px;
+    margin-top: 40px;
+    align-items: flex-start;
+  }
+
+  .about-left-panel {
+    flex: 0 0 280px;
+    text-align: center;
+  }
+
+  .profile-image-container {
+    margin-bottom: 30px;
+  }
+
+  .profile-image-circle {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border: 4px solid #ffffff;
+  }
+
+  .personal-info {
+    margin-top: 20px;
+  }
+
+  .personal-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 8px;
+  }
+
+  .personal-title {
+    font-size: 18px;
+    color: #4b5563;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  .personal-affiliation {
+    font-size: 15px;
+    color: #6b7280;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 16px;
+    color: #4b5563;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    background-color: #f9fafb;
+    transition: all 0.2s ease;
+    font-weight: 500;
+  }
+
+  .contact-link:hover {
+    background-color: #f3f4f6;
+    color: #1f2937;
+    border-color: #d1d5db;
+  }
+
+  .contact-link i {
+    font-size: 16px;
+    width: 20px;
+  }
+
+  .about-right-panel {
+    flex: 1;
+  }
+
+  .biography-section {
+    margin-bottom: 40px;
+  }
+
+  .biography-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #374151;
+  }
+
+  .biography-text p {
+    margin-bottom: 20px;
+  }
+
+  .interests-education-grid {
+    display: flex;
+    gap: 40px;
+  }
+
+  .interests-section,
+  .education-section {
+    flex: 1;
+  }
+
+  .section-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e5e7eb;
+  }
+
+  .interests-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .interests-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    color: #4b5563;
+    font-size: 15px;
+  }
+
+  .interests-list i {
+    color: #bfa76f;
+    font-size: 8px;
+    margin-right: 12px;
+  }
+
+  .education-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .education-entry {
+    display: flex;
+    gap: 16px;
+  }
+
+  .education-icon {
+    flex: 0 0 24px;
+    margin-top: 4px;
+  }
+
+  .education-icon i {
+    color: #bfa76f;
+    font-size: 18px;
+  }
+
+  .education-details {
+    flex: 1;
+  }
+
+  .education-degree {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 4px;
+  }
+
+  .education-school {
+    font-size: 15px;
+    color: #4b5563;
+    margin-bottom: 4px;
+  }
+
+  .education-period {
+    font-size: 14px;
+    color: #6b7280;
+    font-weight: 500;
+  }
+
   .profile-img, .profile-image {
     border-radius: 12px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
