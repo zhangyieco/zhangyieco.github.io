@@ -1,0 +1,668 @@
+/* Academic-style professional website design */
+
+/* Import modern fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
+
+/* CSS Variables for theme */
+:root {
+  /* Primary colors - academic blue theme */
+  --primary-color: #2962ff;
+  --primary-dark: #0039cb;
+  --primary-light: #768fff;
+  --secondary-color: #00b0ff;
+  --accent-color: #ff4081;
+  
+  /* Neutral colors */
+  --dark-text: #212121;
+  --medium-text: #616161;
+  --light-text: #9e9e9e;
+  --border-color: #e0e0e0;
+  --light-bg: #f5f5f5;
+  --card-bg: #ffffff;
+  --footer-bg: #f8f9fa;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  
+  /* Typography */
+  --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  
+  /* Effects */
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
+  --border-radius: 8px;
+  --transition: all 0.3s ease;
+}
+
+/* Reset and base styles */
+body {
+  font-family: var(--font-body);
+  color: var(--dark-text);
+  line-height: 1.6;
+  background-color: var(--light-bg);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* Header and Navigation */
+.site-header {
+  background-color: var(--card-bg);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.site-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.site-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: var(--spacing-md);
+}
+
+.site-nav a {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  color: var(--medium-text);
+  text-decoration: none;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: var(--transition);
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--primary-color);
+}
+
+.site-nav a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+/* Main content */
+.main-content {
+  padding: var(--spacing-xl) 0;
+}
+
+/* Profile section */
+.profile-section {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  padding: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+  overflow: hidden;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: var(--spacing-xl);
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+}
+
+.profile-image-container {
+  text-align: center;
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid var(--primary-light);
+  box-shadow: var(--shadow-md);
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.profile-name {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--dark-text);
+}
+
+.profile-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.profile-institution {
+  font-size: 1.2rem;
+  color: var(--medium-text);
+  margin: 0;
+}
+
+.profile-contact {
+  margin-top: var(--spacing-md);
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--medium-text);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.contact-link:hover {
+  color: var(--primary-color);
+}
+
+.contact-link i {
+  font-size: 1.2rem;
+}
+
+/* Biography section */
+.biography {
+  margin-top: var(--spacing-lg);
+}
+
+.biography h2 {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--dark-text);
+  border-bottom: 2px solid var(--primary-light);
+  padding-bottom: var(--spacing-xs);
+}
+
+.biography p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--dark-text);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Interests and education */
+.profile-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.interests h3,
+.education h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--dark-text);
+}
+
+.interests ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.interests li {
+  padding: var(--spacing-xs) 0;
+  color: var(--medium-text);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.interests li::before {
+  content: '•';
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.education-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.education-item {
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.education-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.education-degree {
+  font-weight: 600;
+  color: var(--dark-text);
+  margin: 0;
+}
+
+.education-institution {
+  color: var(--medium-text);
+  margin: 0.25rem 0;
+}
+
+.education-year {
+  color: var(--light-text);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Section styling */
+.section {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  padding: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  margin: 0 0 var(--spacing-lg) 0;
+  color: var(--dark-text);
+  border-bottom: 2px solid var(--primary-light);
+  padding-bottom: var(--spacing-xs);
+}
+
+/* Publications */
+.publications-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.publication-item {
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.publication-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.publication-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0 0 var(--spacing-xs) 0;
+  color: var(--dark-text);
+}
+
+.publication-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.publication-title a:hover {
+  color: var(--primary-color);
+}
+
+.publication-authors {
+  color: var(--medium-text);
+  margin: 0 0 var(--spacing-xs) 0;
+  font-size: 0.95rem;
+}
+
+.publication-venue {
+  color: var(--primary-color);
+  font-weight: 500;
+  margin: 0 0 var(--spacing-sm) 0;
+  font-size: 0.9rem;
+}
+
+.publication-abstract {
+  color: var(--medium-text);
+  line-height: 1.6;
+  margin: var(--spacing-sm) 0;
+  font-size: 0.95rem;
+}
+
+.publication-links {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+  margin-top: var(--spacing-sm);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Working papers */
+.working-papers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.working-paper-card {
+  background-color: var(--light-bg);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  border: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.working-paper-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.working-paper-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 var(--spacing-xs) 0;
+  color: var(--dark-text);
+}
+
+.working-paper-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.working-paper-title a:hover {
+  color: var(--primary-color);
+}
+
+.working-paper-authors {
+  color: var(--medium-text);
+  font-size: 0.9rem;
+  margin: 0 0 var(--spacing-xs) 0;
+}
+
+.working-paper-status {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 0.85rem;
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+.working-paper-abstract {
+  color: var(--medium-text);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: var(--spacing-sm) 0;
+}
+
+/* Teaching section */
+.teaching-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.course-item {
+  padding: var(--spacing-md);
+  background-color: var(--light-bg);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+}
+
+.course-code {
+  font-weight: 600;
+  color: var(--dark-text);
+  margin: 0 0 0.25rem 0;
+}
+
+.course-title {
+  color: var(--medium-text);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Contact section */
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.contact-detail {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.contact-detail h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--dark-text);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-detail p {
+  margin: 0;
+  color: var(--medium-text);
+}
+
+.contact-detail a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.contact-detail a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--footer-bg);
+  padding: var(--spacing-xl) 0;
+  margin-top: var(--spacing-xl);
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.footer-text {
+  color: var(--medium-text);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.footer-social {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.footer-social a {
+  color: var(--medium-text);
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: var(--transition);
+}
+
+.footer-social a:hover {
+  color: var(--primary-color);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    text-align: center;
+  }
+  
+  .site-nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .profile-name {
+    font-size: 2rem;
+  }
+  
+  .profile-title {
+    font-size: 1.25rem;
+  }
+  
+  .section {
+    padding: var(--spacing-lg);
+  }
+  
+  .working-papers-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+  
+  .site-nav ul {
+    gap: var(--spacing-sm);
+  }
+  
+  .site-nav a {
+    font-size: 0.9rem;
+  }
+  
+  .profile-section {
+    padding: var(--spacing-lg);
+  }
+  
+  .section {
+    padding: var(--spacing-md);
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-section,
+.section {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Print styles */
+@media print {
+  .site-header,
+  .site-footer,
+  .btn {
+    display: none;
+  }
+  
+  body {
+    background-color: white;
+  }
+  
+  .profile-section,
+  .section {
+    box-shadow: none;
+    border: 1px solid #ddd;
+    page-break-inside: avoid;
+  }
+}

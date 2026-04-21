@@ -1,250 +1,414 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-
+<html lang="en">
 <head>
-<title>Yi Zhang - </title>
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="author" content="Yi Zhang">
-<meta name="generator" content="Hugo 0.92.2" />
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [['$$','$$'], ['\\[','\\]']],
-    processEscapes: true,
-    processEnvironments: true,
-    menuSettings: { zoom: "Double-Click" },
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-           extensions: ["AMSmath.js", "AMSsymbols.js"] }
-  }
-});
-</script>
-
-<script type="text/javascript"
-  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
-<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-<link rel="stylesheet" href="https://zhangyieco.github.io/css/tufte.css">
-<link rel="stylesheet" href="https://zhangyieco.github.io/css/hugo-tufte.css">
-<link rel="stylesheet" href="https://zhangyieco.github.io/css/hugo-tufte-override.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Yi Zhang - Research</title>
+  
+  <meta name="description" content="Research publications and working papers by Yi Zhang in health economics, industrial organization, and long-term care insurance.">
+  <meta name="keywords" content="Yi Zhang, research, publications, health economics, industrial organization, long-term care insurance, economics papers">
+  <meta name="author" content="Yi Zhang">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Academicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css">
+  
+  <!-- Existing CSS -->
+  <link rel="stylesheet" href="https://zhangyieco.github.io/css/tufte.css">
+  <link rel="stylesheet" href="https://zhangyieco.github.io/css/hugo-tufte.css">
+  <link rel="stylesheet" href="https://zhangyieco.github.io/css/hugo-tufte-override.css">
+  
+  <!-- MathJax -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        menuSettings: { zoom: "Double-Click" },
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { 
+          equationNumbers: { autoNumber: "AMS" },
+          extensions: ["AMSmath.js", "AMSsymbols.js"]
+        }
+      }
+    });
+  </script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  
+  <style>
+    /* Research page specific styles */
+    .research-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .publication-category {
+      margin-bottom: 3rem;
+    }
+    
+    .category-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: #212121;
+      margin: 2.5rem 0 1.5rem 0;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #768fff;
+    }
+    
+    .paper-card {
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      background-color: #ffffff;
+      border-left: 5px solid #2962ff;
+    }
+    
+    .paper-card:nth-of-type(2n) {
+      border-left: 5px solid #00b0ff;
+    }
+    
+    .paper-card:nth-of-type(3n) {
+      border-left: 5px solid #ff4081;
+    }
+    
+    .paper-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+    
+    .paper-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #212121;
+      line-height: 1.3;
+    }
+    
+    .paper-title a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    
+    .paper-title a:hover {
+      color: #2962ff;
+    }
+    
+    .paper-meta {
+      color: #616161;
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    
+    .paper-authors {
+      font-weight: 500;
+    }
+    
+    .paper-journal {
+      font-style: italic;
+      color: #2962ff;
+    }
+    
+    .paper-abstract {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #424242;
+      margin: 16px 0;
+    }
+    
+    .paper-links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+    
+    .paper-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.85rem;
+      transition: all 0.2s ease;
+      border: 1px solid #2962ff;
+      color: #2962ff;
+      background-color: transparent;
+    }
+    
+    .paper-link:hover {
+      background-color: #2962ff;
+      color: white;
+    }
+    
+    .paper-link.pdf {
+      border-color: #ff4081;
+      color: #ff4081;
+    }
+    
+    .paper-link.pdf:hover {
+      background-color: #ff4081;
+      color: white;
+    }
+    
+    .paper-link.journal {
+      border-color: #00b0ff;
+      color: #00b0ff;
+    }
+    
+    .paper-link.journal:hover {
+      background-color: #00b0ff;
+      color: white;
+    }
+    
+    @media (max-width: 768px) {
+      .paper-card {
+        padding: 20px;
+      }
+      
+      .paper-title {
+        font-size: 1.2rem;
+      }
+      
+      .paper-abstract {
+        font-size: 0.9rem;
+      }
+      
+      .category-title {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
-<div id="layout" class="pure-g">
-<article class="pure-u-1">
-<header class="brand">
-  <h1>Yi Zhang</h1>
-  <h2>Ph.D. candidate</h2>
-  <nav class="menu">
-    <ul>
-        <li><a href="/"><i class='fa fa-home fa-lg'></i> About</a></li>
-        <li><a href="/research"><i class='fa fa-bar-chart fa-lg'></i> Research</a></li>
-        <li><a href="/files/cv.pdf"><i class='fa fa-file fa-lg'></i> CV</a></li>
-        <li><a href="/teaching"><i class='fa fa-book fa-lg'></i> Teaching</a></li>
-        <li><a href="/notes"><i class='fa fa-pencil fa-lg'></i> Notes</a></li>
-        <li><a href="/contact"><i class='fa fa-envelope fa-lg'></i> Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-<style>
-/* ========= Global (only this page) ========= */
-body{
-  background-color: rgb(255,255,247);
-  -webkit-font-smoothing: antialiased;
-}
-.section-title{
-  margin-top:40px;
-  margin-bottom:22px;
-  font-size:26px;
-  font-weight:600;
-  color:#1f2937;
-}
-
-/* ========= Paper Cards ========= */
-.paper-card{
-  border-radius:12px;
-  padding:24px;
-  margin-bottom:30px;
-  max-width:860px;
-  box-shadow:0 4px 10px rgba(0,0,0,.06);
-  transition:transform .2s ease, box-shadow .2s ease;
-  background-color:#fcfbf7;
-  border-left:5px solid #bfa76f;
-}
-.paper-card:nth-of-type(2n){
-  background-color:#fdf9f3;
-  border-left:5px solid #d97706;
-}
-.paper-card:nth-of-type(3n){
-  background-color:#f4fef7;
-  border-left:5px solid #6fbf73;
-}
-.paper-card:hover{
-  transform:translateY(-4px);
-  box-shadow:0 8px 18px rgba(0,0,0,.08);
-}
-.paper-title{
-  font-size:22px;
-  font-weight:600;
-  margin-bottom:16px;
-}
-.paper-title a{
-  color:#1f2937;
-  text-decoration: none;
-  border: none;
-}
-.paper-title a:hover{
-  color:#1f2937;
-  text-decoration: none;
-  border: none;
-}
-.paper-meta{
-  color:#4b5563;
-  font-size:14px;
-  margin-bottom:4px;
-}
-.paper-abstract{
-  font-size:15px;
-  line-height:1.6;
-  color:#374151;
-  margin-bottom:0;
-}
-
-/* ========= Footer ========= */
-.page-footer{
-  margin:40px 0 20px;
-  text-align:center;
-  font-size:14px;
-  color:#6b7280;
-}
-.page-footer a{
-  color:#2563eb;
-  text-decoration:none;
-}
-.page-footer a:hover{
-  text-decoration:underline;
-}
-
-/* ========= Responsive ========= */
-@media (max-width:768px){
-  .paper-card{padding:20px;}
-  .paper-title{font-size:20px;margin-bottom:12px;}
-  .paper-abstract{font-size:14px;}
-  .section-title{font-size:24px;}
-}
-</style>
-
-
-<main class="content">
-  <!-- English -->
-  <h1 class="section-title">Publications (English)</h1>
-
-  <div class="paper-card">
-    <div class="paper-title">
-      <a href="/files/research/JAE_2021.pdf" target="_blank" rel="noopener">
-        The impact of parental migration on non-cognitive abilities of left behind children in northwestern China
-      </a>
+  <!-- Header and Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <h1 class="site-title"><a href="/">Yi Zhang</a></h1>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="/">About</a></li>
+            <li><a href="/research" class="active">Research</a></li>
+            <li><a href="/files/cv.pdf">CV</a></li>
+            <li><a href="/teaching">Teaching</a></li>
+            <li><a href="/notes">Notes</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <div class="paper-meta"><strong>Journal of Asian Economics (2021)</strong> — Han Liu, Fang Chang, Hannah Corn, <strong>Yi Zhang</strong>, Yaojiang Shi</div>
-    <div class="paper-abstract">
-      Despite the vast literature surrounding various aspects of left behind children (LBC)’s development in China, very few studies have examined the development of, and impact on their non-cognitive abilities as a result of parental migration. Using survey data consisting of 5002 eighth graders from 160 middle schools in northwestern China, this paper investigates how parental migration affects children’s non-cognitive abilities, as is measured by Big Five components of conscientiousness, extraversion, neuroticism, agreeableness, and openness, as well as children’s grit. We narrow our analysis to long run and short run migration subsamples and use the propensity score matching method to address the potential selection bias issue. Our results show that mother’s migration is particularly harmful to the development of children’s non-cognitive abilities, as mother is usually the primary caregiver and mother’s migration makes less economic contribution to the family. In the long run, LBC with migrant mother tend to have lower levels of conscientiousness and grit; they also have higher level of neuroticism (or lower level of emotional stability). In the short run, when mother migrates, children tend to have lower levels of conscientiousness, agreeableness and openness.
-    </div>
-  </div>
+  </header>
 
-  <div class="paper-card">
-    <div class="paper-title">
-      <a href="/files/research/JAE_2025_peer_effect.pdf" target="_blank" rel="noopener">
-        The peer effect on the academic performance of rural left-behind children
-      </a>
-    </div>
-    <div class="paper-meta"><strong>Journal of Asian Economics (2025) </strong> — Fang Chang, Yajie Wang, Yanan Huo, Songyan Zhang, <strong>Yi Zhang</strong>, Jian Liu</div>
-    <div class="paper-abstract">
-      In the context of China’s dual economic structure, rural left-behind children often face prolonged parental absence, increasing their reliance on peer influence. This paper explores peer effects on math achievement using an instrumental variable approach, based on a sample of 2604 rural primary students in Shaanxi province. The results show that peers’ math performance significantly improves left-behind children’s scores by 0.678 standard deviations, with the strongest influence from their first- and second-best friends. Heterogeneity analysis reveals that peer effects are stronger among left-behind girls, non-boarding students, and those with moderate baseline academic performance. Mechanism analysis suggests that peer influence work through enhanced perceptions of mathematics, increased learning confidence, and improved study habits. These findings highlight the need to address educational challenges faced by left-behind children to enhance rural human capital development.
-    </div>
-  </div>
-  <!-- Chinese -->
-  <h1 class="section-title">Publications (Chinese)</h1>
+  <main class="main-content">
+    <div class="research-content">
+      <!-- Page Title -->
+      <section class="profile-section" style="margin-bottom: 2rem;">
+        <h1 style="font-family: 'Montserrat', sans-serif; font-size: 2.5rem; font-weight: 700; margin: 0 0 1rem 0; color: #212121;">
+          Research
+        </h1>
+        <p style="font-size: 1.2rem; color: #616161; margin: 0;">
+          Publications and working papers in health economics, industrial organization, and related fields.
+        </p>
+      </section>
 
-  <div class="paper-card">
-    <div class="paper-title">
-      <a href="/files/research/LTC_supply_sh.pdf" target="_blank" rel="noopener">
-        长期护理保险与老年照护机构供给：基于S市试点的证据
-      </a>
-    </div>
-    <div class="paper-meta"><strong>社会科学 (2021)</strong> — 余央央，<strong>张毅</strong>，封进</div>
-    <div class="paper-abstract">
-      引导照护供给资源合理配置是长护险制度可持续发展的关键问题之一。文章利用长护险某试点城市1152家照护机构数据，考察待遇给付模式对不同类型照护机构供给的影响。采用双重差分法的实证结果显示，优先针对居家照护提供待遇给付会引导此类机构供给率先增加。进一步，当长护险覆盖对象从城镇职工医保参保人扩大至城乡居民医保参保人时，郊区农村的居家照护机构供给随之增加，集中指数测度结果表明城乡配置不均有所缓解。文章研究表明，长护险对养老服务供给侧改革有积极作用，要进一步优化长护险制度，以提升养老服务供给能力。
-    </div>
-  </div>
+      <!-- English Publications -->
+      <section class="publication-category">
+        <h2 class="category-title">Publications (English)</h2>
+        
+        <div class="paper-card">
+          <h3 class="paper-title">
+            <a href="/files/research/JAE_2021.pdf" target="_blank" rel="noopener">
+              The impact of parental migration on non-cognitive abilities of left behind children in northwestern China
+            </a>
+          </h3>
+          <div class="paper-meta">
+            <span class="paper-authors">Han Liu, Fang Chang, Hannah Corn, <strong>Yi Zhang</strong>, Yaojiang Shi</span> • 
+            <span class="paper-journal">Journal of Asian Economics, 2021</span>
+          </div>
+          <div class="paper-abstract">
+            Despite the vast literature surrounding various aspects of left behind children (LBC)'s development in China, very few studies have examined the development of, and impact on their non-cognitive abilities as a result of parental migration. Using survey data consisting of 5002 eighth graders from 160 middle schools in northwestern China, this paper investigates how parental migration affects children's non-cognitive abilities, as is measured by Big Five components of conscientiousness, extraversion, neuroticism, agreeableness, and openness, as well as children's grit. We narrow our analysis to long run and short run migration subsamples and use the propensity score matching method to address the potential selection bias issue.
+          </div>
+          <div class="paper-links">
+            <a href="/files/research/JAE_2021.pdf" class="paper-link pdf" target="_blank">
+              <i class="fas fa-file-pdf"></i> PDF
+            </a>
+            <a href="https://doi.org/10.1016/j.asieco.2020.101191" class="paper-link journal" target="_blank">
+              <i class="fas fa-external-link-alt"></i> Journal
+            </a>
+          </div>
+        </div>
+        
+        <div class="paper-card">
+          <h3 class="paper-title">
+            <a href="/files/research/JAE_2025_peer_effect.pdf" target="_blank" rel="noopener">
+              The peer effect on the academic performance of rural left-behind children
+            </a>
+          </h3>
+          <div class="paper-meta">
+            <span class="paper-authors">Fang Chang, Yajie Wang, Yanan Huo, Songyan Zhang, <strong>Yi Zhang</strong>, Jian Liu</span> • 
+            <span class="paper-journal">Journal of Asian Economics, 2025</span>
+          </div>
+          <div class="paper-abstract">
+            In the context of China's dual economic structure, rural left-behind children often face prolonged parental absence, increasing their reliance on peer influence. This paper explores peer effects on math achievement using an instrumental variable approach, based on a sample of 2604 rural primary students in Shaanxi province. The results show that peers' math performance significantly improves left-behind children's scores by 0.678 standard deviations, with the strongest influence from their first- and second-best friends. Heterogeneity analysis reveals that peer effects are stronger among left-behind girls, non-boarding students, and those with moderate baseline academic performance.
+          </div>
+          <div class="paper-links">
+            <a href="/files/research/JAE_2025_peer_effect.pdf" class="paper-link pdf" target="_blank">
+              <i class="fas fa-file-pdf"></i> PDF
+            </a>
+            <a href="https://doi.org/10.1016/j.asieco.2024.101192" class="paper-link journal" target="_blank">
+              <i class="fas fa-external-link-alt"></i> Journal
+            </a>
+          </div>
+        </div>
+      </section>
 
-  <div class="paper-card">
-    <div class="paper-title">整合型照护与医疗费用控制——基于“认知友好社区”试点的研究</div>
-    <div class="paper-meta"><strong>财经研究 (2024)</strong> — 余央央，翟颖，<strong>张毅</strong></div>
-    <div class="paper-abstract">
-      整合型照护有助于提高医疗服务效率,其成为控制医疗费用过快增长的重要途径。文章利用“认知友好社区”试点,考察这一针对慢性病防治的整合型照护模式对医疗服务利用的影响,并进行福利分析。文章使用某典型城市的老年照护统一需求评估、医保账户等数据,采用双重差分的方法,研究发现“认知友好社区”试点会使失能老人住院概率降低3%。进一步结合长期护理保险制度以及相关的异质性分析,研究发现“认知友好社区”试点对男性、城镇职工医疗保险参保人、中重度失能人群住院次数的影响更为明显。文章的影响机制是通过信息效应改善健康行为和跨部门照护资源协作来提高照护质量。最终福利分析发现,“认知友好社区”试点不仅提高失能老人的健康水平,且具有较好的经济效应。文章研究表明,促进以社区为重点的整合型照护模式发展具有推广示范作用,未来应大力推广跨部门协作。文章结论对于解决老龄化问题和医疗服务体系改革具有一定的参考意义。
+      <!-- Chinese Publications -->
+      <section class="publication-category">
+        <h2 class="category-title">Publications (Chinese)</h2>
+        
+        <div class="paper-card">
+          <h3 class="paper-title">
+            <a href="/files/research/LTC_supply_sh.pdf" target="_blank" rel="noopener">
+              长期护理保险与老年照护机构供给：基于S市试点的证据
+            </a>
+          </h3>
+          <div class="paper-meta">
+            <span class="paper-authors">余央央，<strong>张毅</strong>，封进</span> • 
+            <span class="paper-journal">社会科学, 2021</span>
+          </div>
+          <div class="paper-abstract">
+            引导照护供给资源合理配置是长护险制度可持续发展的关键问题之一。文章利用长护险某试点城市1152家照护机构数据，考察待遇给付模式对不同类型照护机构供给的影响。采用双重差分法的实证结果显示，优先针对居家照护提供待遇给付会引导此类机构供给率先增加。进一步，当长护险覆盖对象从城镇职工医保参保人扩大至城乡居民医保参保人时，郊区农村的居家照护机构供给随之增加，集中指数测度结果表明城乡配置不均有所缓解。
+          </div>
+          <div class="paper-links">
+            <a href="/files/research/LTC_supply_sh.pdf" class="paper-link pdf" target="_blank">
+              <i class="fas fa-file-pdf"></i> PDF
+            </a>
+          </div>
+        </div>
+        
+        <div class="paper-card">
+          <h3 class="paper-title">整合型照护与医疗费用控制——基于"认知友好社区"试点的研究</h3>
+          <div class="paper-meta">
+            <span class="paper-authors">余央央，翟颖，<strong>张毅</strong></span> • 
+            <span class="paper-journal">财经研究, 2024</span>
+          </div>
+          <div class="paper-abstract">
+            整合型照护有助于提高医疗服务效率,其成为控制医疗费用过快增长的重要途径。文章利用"认知友好社区"试点,考察这一针对慢性病防治的整合型照护模式对医疗服务利用的影响,并进行福利分析。文章使用某典型城市的老年照护统一需求评估、医保账户等数据,采用双重差分的方法,研究发现"认知友好社区"试点会使失能老人住院概率降低3%。进一步结合长期护理保险制度以及相关的异质性分析,研究发现"认知友好社区"试点对男性、城镇职工医疗保险参保人、中重度失能人群住院次数的影响更为明显。
+          </div>
+        </div>
+        
+        <div class="paper-card">
+          <h3 class="paper-title">长期护理保险的资源配置效应——基于制度激励与照护机构市场进入的研究</h3>
+          <div class="paper-meta">
+            <span class="paper-authors">余央央，<strong>张毅</strong>，封进</span> • 
+            <span class="paper-journal">经济学（季刊）, 2025</span>
+          </div>
+          <div class="paper-abstract">
+            本文从理论上刻画长期护理保险对供方经济激励及市场进入的影响机理,并进行实证检验。研究发现长期护理保险促进医疗类居家机构、养老院供给,不影响提供生活照料的社区机构供给,改善了"重生活照料、轻医疗护理"格局;进一步研究发现待遇水平、报销方式对医疗照护资源的配置能力更强,在促进特定机构供给中呈不同时效性。长期护理保险带来区域配置不均主要是营利性机构更会选择进入发达地区。本文从长期护理保险制度设计的角度为优化照护资源配置提供启示。
+          </div>
+        </div>
+      </section>
+
+      <!-- Working Papers -->
+      <section class="publication-category">
+        <h2 class="category-title">Working Papers</h2>
+        
+        <div class="paper-card">
+          <h3 class="paper-title">
+            <a href="/files/workingpapers/xinhua_bookstore.pdf" target="_blank" rel="noopener">
+              社区图书资源与人力资本积累：中国新华书店扩张的证据
+            </a>
+          </h3>
+          <div class="paper-meta">
+            <span class="paper-authors"><strong>张毅</strong>，翁煜晗，刘倩</span> • 
+            <span class="paper-journal">Working Paper, 2025</span>
+          </div>
+          <div class="paper-abstract">
+            采用队列双重差分策略识别新华书店进入对受教育年限和大学入学率的长期影响，尤其对女性与低教育家庭个体影响更大，是首次系统评估中国书店基础设施长期教育效应的研究。
+          </div>
+          <div class="paper-links">
+            <a href="/files/workingpapers/xinhua_bookstore.pdf" class="paper-link pdf" target="_blank">
+              <i class="fas fa-file-pdf"></i> PDF
+            </a>
+          </div>
+        </div>
+        
+        <div class="paper-card">
+          <h3 class="paper-title">
+            <a href="/files/workingpapers/pharma_reform_pharmacies.pdf" target="_blank" rel="noopener">
+              Pharmaceutical Reform and Retail Pharmacy Supply: Evidence from China's Separation of Prescribing and Dispensing
+            </a>
+          </h3>
+          <div class="paper-meta">
+            <span class="paper-authors">Yangyang Yu, Ying Zhai, <strong>Yi Zhang</strong></span> • 
+            <span class="paper-journal">Working Paper, 2025</span>
+          </div>
+          <div class="paper-abstract">
+            A central concern in pharmaceutical reform—particularly the separation of prescribing and dispensing—is its potential to reduce access to medicines. This paper provides the first evidence that retail pharmacy supply can expand in response to such reforms. Exploiting the staggered implementation of pharmaceutical reform across counties in China, we show that financial incentives induced by the reform significantly increased the net entry of retail pharmacies—by approximately 1.5 per county (≈20%). The increase was larger in counties where the reform generated stronger financial incentives.
+          </div>
+          <div class="paper-links">
+            <a href="/files/workingpapers/pharma_reform_pharmacies.pdf" class="paper-link pdf" target="_blank">
+              <i class="fas fa-file-pdf"></i> PDF
+            </a>
+          </div>
+        </div>
+        
+        <div class="paper-card">
+          <h3 class="paper-title">Long-term Care Insurance and Provider Entry: Evidence from China</h3>
+          <div class="paper-meta">
+            <span class="paper-authors"><strong>Yi Zhang</strong></span> • 
+            <span class="paper-journal">Job Market Paper</span>
+          </div>
+          <div class="paper-abstract">
+            Examines the effects of China's long-term care insurance pilot program on the entry decisions of service providers. Uses difference-in-differences approach with novel provider-level data to analyze how insurance expansion affects market structure, provider behavior, and consumer welfare in the long-term care market.
+          </div>
+          <div class="paper-links">
+            <a href="#" class="paper-link">
+              <i class="fas fa-envelope"></i> Draft Available on Request
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
-  </div>
+  </main>
 
-  <div class="paper-card">
-    <div class="paper-title">长期护理保险的资源配置效应——基于制度激励与照护机构市场进入的研究</div>
-    <div class="paper-meta"><strong>经济学（季刊） (2025)</strong> — 余央央，<strong>张毅</strong>，封进</div>
-    <div class="paper-abstract">
-      本文从理论上刻画长期护理保险对供方经济激励及市场进入的影响机理,并进行实证检验。研究发现长期护理保险促进医疗类居家机构、养老院供给,不影响提供生活照料的社区机构供给,改善了“重生活照料、轻医疗护理”格局;进一步研究发现待遇水平、报销方式对医疗照护资源的配置能力更强,在促进特定机构供给中呈不同时效性。长期护理保险带来区域配置不均主要是营利性机构更会选择进入发达地区。本文从长期护理保险制度设计的角度为优化照护资源配置提供启示。
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-text">
+          &copy; 2024 Yi Zhang. All rights reserved.
+        </p>
+        <div class="footer-social">
+          <a href="mailto:zhangyieco@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://github.com/zhangyieco" aria-label="GitHub" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="/files/cv.pdf" aria-label="CV">
+            <i class="ai ai-cv"></i>
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
-
-  <!-- Working Papers -->
-  <h1 class="section-title">Working Papers</h1>
-
-  <div class="paper-card">
-    <div class="paper-title">
-      <a href="/files/workingpapers/xinhua_bookstore.pdf" target="_blank" rel="noopener">
-        社区图书资源与人力资本积累：中国新华书店扩张的证据
-      </a>
-    </div>
-    <div class="paper-meta"><strong>Working Paper (2025)</strong> — <strong>张毅</strong>，翁煜晗，刘倩</div>
-    <div class="paper-abstract">
-      采用队列双重差分策略识别新华书店进入对受教育年限和大学入学率的长期影响，尤其对女性与低教育家庭个体影响更大，是首次系统评估中国书店基础设施长期教育效应的研究。
-    </div>
-  </div>
-
-  <div class="paper-card">
-    <div class="paper-title">
-      <a href="/files/workingpapers/pharma_reform_pharmacies.pdf" target="_blank" rel="noopener">
-        Pharmaceutical Reform and Retail Pharmacy Supply: Evidence from China’s Separation of Prescribing and Dispensing
-      </a>
-    </div>
-    <div class="paper-meta"><strong>Working Paper (2025)</strong> — Yangyang Yu, Ying Zhai, <strong>Yi Zhang</strong></div>
-    <div class="paper-abstract">
-      A central concern in pharmaceutical reform—particularly the separation of prescribing and dispensing—is its potential to reduce access to medicines. This paper provides the first evidence that retail pharmacy supply can expand in response to such reforms. Exploiting the staggered implementation of pharmaceutical reform across counties in China, we show that financial incentives induced by the reform significantly increased the net entry of retail pharmacies—by approximately 1.5 per county (≈20%). The increase was larger in counties where the reform generated stronger financial incentives. The response concentrated in economically and medically better-resourced regions, highlighting potential unintended consequences for equity in access to medicines.
-    </div>
-  </div>
-
-</main>
-
-<footer class="page-footer">
-  <p>
-    Powered by <a href="https://gohugo.io">Hugo</a> and the
-    <a href="https://github.com/shawnohare/hugo-tufte">Tufte theme</a>.
-  </p>
-  <div class="copyright">
-    <p>&copy; 2024 Yi Zhang. All rights reserved.</p>
-  </div>
-</footer>
-
-</article>
-</div>
+  </footer>
 </body>
 </html>
 
