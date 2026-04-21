@@ -232,6 +232,44 @@ body{
   transform: translateY(-2px);
 }
 
+/* ========= New Button Styles ========= */
+.btn {
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-outline-primary {
+  color: #007bff;
+  background-color: transparent;
+  background-image: none;
+  border-color: #007bff;
+}
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* ========= Spacing Utilities ========= */
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
 .paper-badge {
   display: inline-block;
   padding: 4px 10px;
@@ -325,11 +363,8 @@ nav.menu ul li a.active {
       Despite the vast literature surrounding various aspects of left behind children (LBC)’s development in China, very few studies have examined the development of, and impact on their non-cognitive abilities as a result of parental migration. Using survey data consisting of 5002 eighth graders from 160 middle schools in northwestern China, this paper investigates how parental migration affects children’s non-cognitive abilities, as is measured by Big Five components of conscientiousness, extraversion, neuroticism, agreeableness, and openness, as well as children’s grit. We narrow our analysis to long run and short run migration subsamples and use the propensity score matching method to address the potential selection bias issue. Our results show that mother’s migration is particularly harmful to the development of children’s non-cognitive abilities, as mother is usually the primary caregiver and mother’s migration makes less economic contribution to the family. In the long run, LBC with migrant mother tend to have lower levels of conscientiousness and grit; they also have higher level of neuroticism (or lower level of emotional stability). In the short run, when mother migrates, children tend to have lower levels of conscientiousness, agreeableness and openness.
     </div>
     <div class="paper-links">
-      <a href="/files/research/JAE_2021.pdf" class="paper-link pdf" target="_blank" rel="noopener">
+      <a href="/files/research/JAE_2021.pdf" class="btn btn-outline-primary my-1 mr-1" target="_blank" rel="noopener">
         PDF
-      </a>
-      <a href="https://doi.org/10.1016/j.asieco.2020.101191" class="paper-link journal" target="_blank" rel="noopener">
-        Journal
       </a>
     </div>
   </div>
@@ -350,11 +385,8 @@ nav.menu ul li a.active {
       In the context of China’s dual economic structure, rural left-behind children often face prolonged parental absence, increasing their reliance on peer influence. This paper explores peer effects on math achievement using an instrumental variable approach, based on a sample of 2604 rural primary students in Shaanxi province. The results show that peers’ math performance significantly improves left-behind children’s scores by 0.678 standard deviations, with the strongest influence from their first- and second-best friends. Heterogeneity analysis reveals that peer effects are stronger among left-behind girls, non-boarding students, and those with moderate baseline academic performance. Mechanism analysis suggests that peer influence work through enhanced perceptions of mathematics, increased learning confidence, and improved study habits. These findings highlight the need to address educational challenges faced by left-behind children to enhance rural human capital development.
     </div>
     <div class="paper-links">
-      <a href="/files/research/JAE_2025_peer_effect.pdf" class="paper-link pdf" target="_blank" rel="noopener">
+      <a href="/files/research/JAE_2025_peer_effect.pdf" class="btn btn-outline-primary my-1 mr-1" target="_blank" rel="noopener">
         PDF
-      </a>
-      <a href="https://doi.org/10.1016/j.asieco.2024.101192" class="paper-link journal" target="_blank" rel="noopener">
-        Journal
       </a>
     </div>
   </div>
@@ -378,7 +410,7 @@ nav.menu ul li a.active {
       引导照护供给资源合理配置是长护险制度可持续发展的关键问题之一。文章利用长护险某试点城市1152家照护机构数据，考察待遇给付模式对不同类型照护机构供给的影响。采用双重差分法的实证结果显示，优先针对居家照护提供待遇给付会引导此类机构供给率先增加。进一步，当长护险覆盖对象从城镇职工医保参保人扩大至城乡居民医保参保人时，郊区农村的居家照护机构供给随之增加，集中指数测度结果表明城乡配置不均有所缓解。文章研究表明，长护险对养老服务供给侧改革有积极作用，要进一步优化长护险制度，以提升养老服务供给能力。
     </div>
     <div class="paper-links">
-      <a href="/files/research/LTC_supply_sh.pdf" class="paper-link pdf" target="_blank" rel="noopener">
+      <a href="/files/research/LTC_supply_sh.pdf" class="btn btn-outline-primary my-1 mr-1" target="_blank" rel="noopener">
         PDF
       </a>
     </div>
@@ -386,7 +418,11 @@ nav.menu ul li a.active {
 
   <div class="paper-card published">
     <div class="paper-badge badge-published">Published</div>
-    <div class="paper-title">整合型照护与医疗费用控制——基于"认知友好社区"试点的研究</div>
+    <div class="paper-title">
+      <a href="/files/research/整合型照护与医疗费用控制.pdf" target="_blank" rel="noopener">
+        整合型照护与医疗费用控制——基于"认知友好社区"试点的研究
+      </a>
+    </div>
     <div class="paper-meta">
       <span class="paper-journal">财经研究</span>
       <span class="paper-year">2024</span>
@@ -396,9 +432,9 @@ nav.menu ul li a.active {
       整合型照护有助于提高医疗服务效率,其成为控制医疗费用过快增长的重要途径。文章利用"认知友好社区"试点,考察这一针对慢性病防治的整合型照护模式对医疗服务利用的影响,并进行福利分析。文章使用某典型城市的老年照护统一需求评估、医保账户等数据,采用双重差分的方法,研究发现"认知友好社区"试点会使失能老人住院概率降低3%。进一步结合长期护理保险制度以及相关的异质性分析,研究发现"认知友好社区"试点对男性、城镇职工医疗保险参保人、中重度失能人群住院次数的影响更为明显。文章的影响机制是通过信息效应改善健康行为和跨部门照护资源协作来提高照护质量。最终福利分析发现,"认知友好社区"试点不仅提高失能老人的健康水平,且具有较好的经济效应。文章研究表明,促进以社区为重点的整合型照护模式发展具有推广示范作用,未来应大力推广跨部门协作。文章结论对于解决老龄化问题和医疗服务体系改革具有一定的参考意义。
     </div>
     <div class="paper-links">
-      <a href="#" class="paper-link request">
-        Request PDF
-      </a>
+       <a href="/files/research/整合型照护与医疗费用控制.pdf" class="btn btn-outline-primary my-1 mr-1" target="_blank" rel="noopener">
+         PDF
+       </a>
     </div>
   </div>
 
@@ -418,7 +454,7 @@ nav.menu ul li a.active {
       本文从理论上刻画长期护理保险对供方经济激励及市场进入的影响机理,并进行实证检验。研究发现长期护理保险促进医疗类居家机构、养老院供给,不影响提供生活照料的社区机构供给,改善了"重生活照料、轻医疗护理"格局;进一步研究发现待遇水平、报销方式对医疗照护资源的配置能力更强,在促进特定机构供给中呈不同时效性。长期护理保险带来区域配置不均主要是营利性机构更会选择进入发达地区。本文从长期护理保险制度设计的角度为优化照护资源配置提供启示。
     </div>
     <div class="paper-links">
-      <a href="/files/research/长护险资源配置效应.pdf" class="paper-link pdf" target="_blank" rel="noopener">
+      <a href="/files/research/长护险资源配置效应.pdf" class="btn btn-outline-primary my-1 mr-1" target="_blank" rel="noopener">
         PDF
       </a>
     </div>
@@ -443,7 +479,7 @@ nav.menu ul li a.active {
       采用队列双重差分策略识别新华书店进入对受教育年限和大学入学率的长期影响，尤其对女性与低教育家庭个体影响更大，是首次系统评估中国书店基础设施长期教育效应的研究。
     </div>
     <div class="paper-links">
-      <a href="/files/workingpapers/xinhua_bookstore.pdf" class="paper-link working" target="_blank" rel="noopener">
+      <a href="/files/workingpapers/xinhua_bookstore.pdf" class="btn btn-outline-primary my-1 mr-1" target="_blank" rel="noopener">
         PDF
       </a>
     </div>
@@ -465,7 +501,7 @@ nav.menu ul li a.active {
       A central concern in pharmaceutical reform—particularly the separation of prescribing and dispensing—is its potential to reduce access to medicines. This paper provides the first evidence that retail pharmacy supply can expand in response to such reforms. Exploiting the staggered implementation of pharmaceutical reform across counties in China, we show that financial incentives induced by the reform significantly increased the net entry of retail pharmacies—by approximately 1.5 per county (≈20%). The increase was larger in counties where the reform generated stronger financial incentives. The response concentrated in economically and medically better-resourced regions, highlighting potential unintended consequences for equity in access to medicines.
     </div>
     <div class="paper-links">
-      <a href="/files/workingpapers/pharma_reform_pharmacies.pdf" class="paper-link working" target="_blank" rel="noopener">
+      <a href="/files/workingpapers/pharma_reform_pharmacies.pdf" class="btn btn-outline-primary my-1 mr-1" target="_blank" rel="noopener">
         PDF
       </a>
     </div>
@@ -484,7 +520,7 @@ nav.menu ul li a.active {
       Examines the effects of China's long-term care insurance pilot program on the entry decisions of service providers. Uses difference-in-differences approach with novel provider-level data to analyze how insurance expansion affects market structure, provider behavior, and consumer welfare in the long-term care market.
     </div>
     <div class="paper-links">
-      <a href="#" class="paper-link request">
+      <a href="#" class="btn btn-outline-primary my-1 mr-1">
         Draft Available on Request
       </a>
     </div>
