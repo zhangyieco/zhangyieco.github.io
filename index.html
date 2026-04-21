@@ -1106,10 +1106,8 @@ function toggleAbstract(button) {
   const abstract = button.parentElement.querySelector('.paper-abstract');
   if (abstract.classList.contains('expanded')) {
     abstract.classList.remove('expanded');
-    button.textContent = 'Show Abstract';
   } else {
     abstract.classList.add('expanded');
-    button.textContent = 'Hide Abstract';
   }
 }
 </script>
@@ -1448,16 +1446,14 @@ function toggleAbstract(button) {
          if (meta && abstract && !card.querySelector('.abstract-toggle')) {
            const toggleBtn = document.createElement('button');
            toggleBtn.className = 'abstract-toggle';
-           toggleBtn.textContent = 'Show Abstract';
-           toggleBtn.onclick = function() {
-             if (abstract.classList.contains('expanded')) {
-               abstract.classList.remove('expanded');
-               this.textContent = 'Show Abstract';
-             } else {
-               abstract.classList.add('expanded');
-               this.textContent = 'Hide Abstract';
-             }
-           };
+            toggleBtn.textContent = 'Abstract';
+            toggleBtn.onclick = function() {
+              if (abstract.classList.contains('expanded')) {
+                abstract.classList.remove('expanded');
+              } else {
+                abstract.classList.add('expanded');
+              }
+            };
            meta.parentNode.insertBefore(toggleBtn, abstract);
          }
        });
