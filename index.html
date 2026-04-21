@@ -1020,12 +1020,22 @@ nav.menu ul li a.active {
 
  /* Full-width background for sections */
  #about, #publications, #working-papers {
+   position: relative;
+ }
+ 
+ #about::before, #publications::before, #working-papers::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 50%;
+   right: 50%;
+   margin-left: -50vw;
+   margin-right: -50vw;
    width: 100vw;
-   margin-left: calc(-50vw + 50%);
-   margin-right: calc(-50vw + 50%);
-   padding-left: calc(50vw - 50%);
-   padding-right: calc(50vw - 50%);
-   box-sizing: border-box;
+   height: 100%;
+   background-color: inherit;
+   z-index: -1;
+   border-radius: 12px;
  }
 
  .content-section:last-of-type {
@@ -1083,6 +1093,11 @@ nav.menu ul li a.active {
       margin-right: 0;
       padding-left: 0;
       padding-right: 0;
+      position: static;
+    }
+    
+    #about::before, #publications::before, #working-papers::before {
+      display: none;
     }
 
   /* Top navbar mobile adjustments */
