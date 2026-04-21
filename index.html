@@ -766,13 +766,25 @@ nav.menu ul li a.active {
 
    .interests-education-grid {
      display: flex;
-     gap: 30px;
+     gap: 0;
    }
 
-  .interests-section,
-  .education-section {
-    flex: 1;
-  }
+   .interests-section,
+   .education-section {
+     flex: 1;
+     box-sizing: border-box;
+     padding: 0 15px;
+   }
+   
+   .interests-section {
+     padding-right: 15px;
+     padding-left: 0;
+   }
+   
+   .education-section {
+     padding-left: 15px;
+     padding-right: 0;
+   }
 
   .about-right-panel .section-subtitle {
     font-size: 20px;
