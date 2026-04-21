@@ -923,33 +923,90 @@ function toggleAbstract(button) {
       <!-- About Section -->
       <section id="about" class="content-section">
         <h1 class="section-title">About</h1>
-        <div class="about-merged-grid">
-          <div class="about-photo">
-            <img src="/zhangyi2026.jpg" alt="Yi Zhang" class="profile-image">
-          </div>
-          <div class="about-intro">
-            <div class="bio-text">
-              <p>Welcome. I am a Ph.D. in Social Security from Shanghai University of Finance and Economics (SUFE,上海财经大学).</p>
-              <p>My research interests are <strong>health economics</strong> and <strong>industrial organization</strong>.</p>
+        <div class="about-composite-layout">
+          <!-- Left Panel: Circular Photo & Personal Info -->
+          <div class="about-left-panel">
+            <div class="profile-image-container">
+              <img src="/zhangyi2026.jpg" alt="Yi Zhang" class="profile-image-circle">
+            </div>
+            <div class="personal-info">
+              <h2 class="personal-name">Yi Zhang</h2>
+              <div class="personal-title">Ph.D.</div>
+              <div class="personal-affiliation">Shanghai University of Finance and Economics</div>
+              <div class="contact-links">
+                <a href="mailto:" class="contact-link">
+                  <i class="fa fa-envelope"></i> Email
+                </a>
+                <a href="https://github.com/zhangyieco" target="_blank" rel="noopener" class="contact-link">
+                  <i class="fa fa-github"></i> GitHub
+                </a>
+                <a href="/files/cv2026.pdf" target="_blank" rel="noopener" class="contact-link">
+                  <i class="fa fa-file-pdf-o"></i> CV
+                </a>
+              </div>
             </div>
           </div>
-          <div class="about-education">
-            <h3 class="education-title">Education</h3>
-            <div class="education-list">
-              <div class="education-item">
-                <div class="education-degree">Ph.D. in Social Security</div>
-                <div class="education-school">Shanghai University of Finance and Economics</div>
-                <div class="education-period">2022-2026</div>
+
+          <!-- Right Panel: Biography, Interests, Education -->
+          <div class="about-right-panel">
+            <!-- Biography Section -->
+            <div class="biography-section">
+              <h3 class="section-subtitle">Biography</h3>
+              <div class="biography-text">
+                <p>Welcome. I am a Ph.D. in Social Security from Shanghai University of Finance and Economics (SUFE,上海财经大学). My research focuses on health economics and industrial organization, with particular interest in long-term care insurance, pharmaceutical reforms, and the economic impact of social security policies.</p>
+                <p>I employ empirical methods and structural modeling to analyze healthcare markets, provider behavior, and policy interventions. My work has been published in peer-reviewed journals including Journal of Asian Economics, Social Sciences, and Economics Quarterly.</p>
               </div>
-              <div class="education-item">
-                <div class="education-degree">M.A. in Economics</div>
-                <div class="education-school">Shaanxi Normal University</div>
-                <div class="education-period">2019-2022</div>
+            </div>
+
+            <!-- Interests & Education Grid -->
+            <div class="interests-education-grid">
+              <!-- Interests Section -->
+              <div class="interests-section">
+                <h3 class="section-subtitle">Interests</h3>
+                <ul class="interests-list">
+                  <li><i class="fa fa-circle"></i> Health Economics</li>
+                  <li><i class="fa fa-circle"></i> Industrial Organization</li>
+                  <li><i class="fa fa-circle"></i> Long-term Care Insurance</li>
+                  <li><i class="fa fa-circle"></i> Pharmaceutical Economics</li>
+                  <li><i class="fa fa-circle"></i> Social Security Policy</li>
+                </ul>
               </div>
-              <div class="education-item">
-                <div class="education-degree">B.A. in Economics</div>
-                <div class="education-school">Xi'an University of Posts and Telecommunications</div>
-                <div class="education-period">2015-2019</div>
+
+              <!-- Education Section -->
+              <div class="education-section">
+                <h3 class="section-subtitle">Education</h3>
+                <div class="education-timeline">
+                  <div class="education-entry">
+                    <div class="education-icon">
+                      <i class="fa fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-details">
+                      <div class="education-degree">Ph.D. in Social Security</div>
+                      <div class="education-school">Shanghai University of Finance and Economics</div>
+                      <div class="education-period">2022-2026</div>
+                    </div>
+                  </div>
+                  <div class="education-entry">
+                    <div class="education-icon">
+                      <i class="fa fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-details">
+                      <div class="education-degree">M.A. in Economics</div>
+                      <div class="education-school">Shaanxi Normal University</div>
+                      <div class="education-period">2019-2022</div>
+                    </div>
+                  </div>
+                  <div class="education-entry">
+                    <div class="education-icon">
+                      <i class="fa fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-details">
+                      <div class="education-degree">B.A. in Economics</div>
+                      <div class="education-school">Xi'an University of Posts and Telecommunications</div>
+                      <div class="education-period">2015-2019</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
