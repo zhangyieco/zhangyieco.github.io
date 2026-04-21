@@ -1173,6 +1173,30 @@ function toggleAbstract(button) {
   <script>
     document.addEventListener('DOMContentLoaded', function() {
        // Navigation setup for top navbar
+
+       // Remove all paper-links and add abstract toggle buttons
+       document.querySelectorAll('.paper-card').forEach(card => {
+         const links = card.querySelector('.paper-links');
+         if (links) links.remove();
+         
+         const meta = card.querySelector('.paper-meta');
+         const abstract = card.querySelector('.paper-abstract');
+         if (meta && abstract && !card.querySelector('.abstract-toggle')) {
+           const toggleBtn = document.createElement('button');
+           toggleBtn.className = 'abstract-toggle';
+           toggleBtn.textContent = 'Show Abstract';
+           toggleBtn.onclick = function() {
+             if (abstract.classList.contains('expanded')) {
+               abstract.classList.remove('expanded');
+               this.textContent = 'Show Abstract';
+             } else {
+               abstract.classList.add('expanded');
+               this.textContent = 'Hide Abstract';
+             }
+           };
+           meta.parentNode.insertBefore(toggleBtn, abstract);
+         }
+       });
       
       // Smooth scrolling for anchor links
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
