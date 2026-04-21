@@ -458,22 +458,68 @@ nav.menu ul li a.active {
     max-width: 70%;
   }
 
-  .about-grid {
+  .about-education-grid {
     display: flex;
-    gap: 40px;
-    margin-top: 20px;
+    gap: 60px;
+    margin-top: 30px;
+    align-items: flex-start;
   }
 
-  .about-intro {
+  .about-column {
     flex: 1;
   }
 
-  .education {
+  .education-column {
     flex: 1;
   }
 
-  .about-grid .contact-info {
-    margin-top: 0;
+  .education-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 24px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e5e7eb;
+  }
+
+  .education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .education-item {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: box-shadow 0.2s ease;
+  }
+
+  .education-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .education-degree {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+
+  .education-school {
+    font-size: 16px;
+    color: #4b5563;
+    margin-bottom: 6px;
+    line-height: 1.4;
+  }
+
+  .education-period {
+    font-size: 14px;
+    color: #6b7280;
+    font-weight: 500;
   }
 
   .profile-img {
@@ -808,9 +854,13 @@ nav.menu ul li a.active {
     margin-bottom: 60px;
   }
 
-  .about-grid {
+  .about-education-grid {
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
+  }
+
+  .education-item {
+    padding: 18px;
   }
 }
 
