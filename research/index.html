@@ -40,55 +40,24 @@ MathJax.Hub.Config({
 </head>
 
 <body>
-<div class="container">
-  <header class="site-header">
-    <div class="header-content">
-      <div class="header-titles">
-        <h1 class="site-title">Yi Zhang</h1>
-        <p class="site-subtitle">Ph.D. Candidate in Social Security</p>
-        <p class="site-institution">Shanghai University of Finance and Economics (SUFE)</p>
-      </div>
-      <nav class="site-nav">
-        <ul class="nav-menu">
-          <li><a href="/" class="nav-link"><i class="fa fa-home"></i> About</a></li>
-          <li><a href="/research" class="nav-link active"><i class="fa fa-bar-chart"></i> Research</a></li>
-          <li><a href="/files/cv.pdf" class="nav-link"><i class="fa fa-file"></i> CV</a></li>
-          <li><a href="/teaching" class="nav-link"><i class="fa fa-book"></i> Teaching</a></li>
-          <li><a href="/notes" class="nav-link"><i class="fa fa-pencil"></i> Notes</a></li>
-          <li><a href="/contact" class="nav-link"><i class="fa fa-envelope"></i> Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<div id="layout" class="pure-g">
+<article class="pure-u-1">
+<header class="brand">
+  <h1>Yi Zhang</h1>
+  <h2>Ph.D. candidate</h2>
+  <nav class="menu">
+    <ul>
+        <li><a href="/"><i class='fa fa-home fa-lg'></i> About</a></li>
+        <li><a href="/research"><i class='fa fa-bar-chart fa-lg'></i> Research</a></li>
+        <li><a href="/files/cv.pdf"><i class='fa fa-file fa-lg'></i> CV</a></li>
+        <li><a href="/teaching"><i class='fa fa-book fa-lg'></i> Teaching</a></li>
+        <li><a href="/notes"><i class='fa fa-pencil fa-lg'></i> Notes</a></li>
+        <li><a href="/contact"><i class='fa fa-envelope fa-lg'></i> Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <main class="main-content">
-    <div class="content-grid">
-      <aside class="sidebar">
-        <div class="profile-card">
-          <img src="/profile.jpg" alt="Yi Zhang" class="profile-image">
-          <div class="profile-info">
-            <h3 class="profile-name">Yi Zhang</h3>
-            <p class="profile-title">Ph.D. Candidate</p>
-            <p class="profile-department">Social Security</p>
-            <p class="profile-institution">Shanghai University of Finance and Economics</p>
-            <div class="contact-info">
-              <p><i class="fa fa-envelope"></i> zhangyieco@gmail.com</p>
-              <p><i class="fa fa-github"></i> <a href="https://github.com/zhangyieco">zhangyieco</a></p>
-            </div>
-            <div class="research-interests">
-              <h4>Research Interests</h4>
-              <ul>
-                <li>Health Economics</li>
-                <li>Industrial Organization</li>
-                <li>Long-term Care Insurance</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </aside>
-
-      <article class="main-article">
-        <style>
+<style>
 /* ========= Global (only this page) ========= */
 body{
   background-color: rgb(255,255,247);
@@ -107,7 +76,7 @@ body{
   border-radius:12px;
   padding:24px;
   margin-bottom:30px;
-  max-width:100%;
+  max-width:860px;
   box-shadow:0 4px 10px rgba(0,0,0,.06);
   transition:transform .2s ease, box-shadow .2s ease;
   background-color:#fcfbf7;
@@ -176,113 +145,105 @@ body{
 }
 </style>
 
-        <!-- English -->
-        <h1 class="section-title">Publications (English)</h1>
 
-        <div class="paper-card">
-          <div class="paper-title">
-            <a href="/files/research/JAE_2021.pdf" target="_blank" rel="noopener">
-              The impact of parental migration on non-cognitive abilities of left behind children in northwestern China
-            </a>
-          </div>
-          <div class="paper-meta"><strong>Journal of Asian Economics (2021)</strong> — Han Liu, Fang Chang, Hannah Corn, <strong>Yi Zhang</strong>, Yaojiang Shi</div>
-          <div class="paper-abstract">
-            Despite the vast literature surrounding various aspects of left behind children (LBC)’s development in China, very few studies have examined the development of, and impact on their non-cognitive abilities as a result of parental migration. Using survey data consisting of 5002 eighth graders from 160 middle schools in northwestern China, this paper investigates how parental migration affects children’s non-cognitive abilities, as is measured by Big Five components of conscientiousness, extraversion, neuroticism, agreeableness, and openness, as well as children’s grit. We narrow our analysis to long run and short run migration subsamples and use the propensity score matching method to address the potential selection bias issue. Our results show that mother’s migration is particularly harmful to the development of children’s non-cognitive abilities, as mother is usually the primary caregiver and mother’s migration makes less economic contribution to the family. In the long run, LBC with migrant mother tend to have lower levels of conscientiousness and grit; they also have higher level of neuroticism (or lower level of emotional stability). In the short run, when mother migrates, children tend to have lower levels of conscientiousness, agreeableness and openness.
-          </div>
-        </div>
+<main class="content">
+  <!-- English -->
+  <h1 class="section-title">Publications (English)</h1>
 
-        <div class="paper-card">
-          <div class="paper-title">
-            <a href="/files/research/JAE_2025_peer_effect.pdf" target="_blank" rel="noopener">
-              The peer effect on the academic performance of rural left-behind children
-            </a>
-          </div>
-          <div class="paper-meta"><strong>Journal of Asian Economics (2025) </strong> — Fang Chang, Yajie Wang, Yanan Huo, Songyan Zhang, <strong>Yi Zhang</strong>, Jian Liu</div>
-          <div class="paper-abstract">
-            In the context of China’s dual economic structure, rural left-behind children often face prolonged parental absence, increasing their reliance on peer influence. This paper explores peer effects on math achievement using an instrumental variable approach, based on a sample of 2604 rural primary students in Shaanxi province. The results show that peers’ math performance significantly improves left-behind children’s scores by 0.678 standard deviations, with the strongest influence from their first- and second-best friends. Heterogeneity analysis reveals that peer effects are stronger among left-behind girls, non-boarding students, and those with moderate baseline academic performance. Mechanism analysis suggests that peer influence work through enhanced perceptions of mathematics, increased learning confidence, and improved study habits. These findings highlight the need to address educational challenges faced by left-behind children to enhance rural human capital development.
-          </div>
-        </div>
-        <!-- Chinese -->
-        <h1 class="section-title">Publications (Chinese)</h1>
-
-        <div class="paper-card">
-          <div class="paper-title">
-            <a href="/files/research/LTC_supply_sh.pdf" target="_blank" rel="noopener">
-              长期护理保险与老年照护机构供给：基于S市试点的证据
-            </a>
-          </div>
-          <div class="paper-meta"><strong>社会科学 (2021)</strong> — 余央央，<strong>张毅</strong>，封进</div>
-          <div class="paper-abstract">
-            引导照护供给资源合理配置是长护险制度可持续发展的关键问题之一。文章利用长护险某试点城市1152家照护机构数据，考察待遇给付模式对不同类型照护机构供给的影响。采用双重差分法的实证结果显示，优先针对居家照护提供待遇给付会引导此类机构供给率先增加。进一步，当长护险覆盖对象从城镇职工医保参保人扩大至城乡居民医保参保人时，郊区农村的居家照护机构供给随之增加，集中指数测度结果表明城乡配置不均有所缓解。文章研究表明，长护险对养老服务供给侧改革有积极作用，要进一步优化长护险制度，以提升养老服务供给能力。
-          </div>
-        </div>
-
-        <div class="paper-card">
-          <div class="paper-title">整合型照护与医疗费用控制——基于“认知友好社区”试点的研究</div>
-          <div class="paper-meta"><strong>财经研究 (2024)</strong> — 余央央，翟颖，<strong>张毅</strong></div>
-          <div class="paper-abstract">
-            整合型照护有助于提高医疗服务效率,其成为控制医疗费用过快增长的重要途径。文章利用“认知友好社区”试点,考察这一针对慢性病防治的整合型照护模式对医疗服务利用的影响,并进行福利分析。文章使用某典型城市的老年照护统一需求评估、医保账户等数据,采用双重差分的方法,研究发现“认知友好社区”试点会使失能老人住院概率降低3%。进一步结合长期护理保险制度以及相关的异质性分析,研究发现“认知友好社区”试点对男性、城镇职工医疗保险参保人、中重度失能人群住院次数的影响更为明显。文章的影响机制是通过信息效应改善健康行为和跨部门照护资源协作来提高照护质量。最终福利分析发现,“认知友好社区”试点不仅提高失能老人的健康水平,且具有较好的经济效应。文章研究表明,促进以社区为重点的整合型照护模式发展具有推广示范作用,未来应大力推广跨部门协作。文章结论对于解决老龄化问题和医疗服务体系改革具有一定的参考意义。
-          </div>
-        </div>
-
-        <div class="paper-card">
-          <div class="paper-title">长期护理保险的资源配置效应——基于制度激励与照护机构市场进入的研究</div>
-          <div class="paper-meta"><strong>经济学（季刊） (2025)</strong> — 余央央，<strong>张毅</strong>，封进</div>
-          <div class="paper-abstract">
-            本文从理论上刻画长期护理保险对供方经济激励及市场进入的影响机理,并进行实证检验。研究发现长期护理保险促进医疗类居家机构、养老院供给,不影响提供生活照料的社区机构供给,改善了“重生活照料、轻医疗护理”格局;进一步研究发现待遇水平、报销方式对医疗照护资源的配置能力更强,在促进特定机构供给中呈不同时效性。长期护理保险带来区域配置不均主要是营利性机构更会选择进入发达地区。本文从长期护理保险制度设计的角度为优化照护资源配置提供启示。
-          </div>
-        </div>
-
-        <!-- Working Papers -->
-        <h1 class="section-title">Working Papers</h1>
-
-        <div class="paper-card">
-          <div class="paper-title">
-            <a href="/files/workingpapers/xinhua_bookstore.pdf" target="_blank" rel="noopener">
-              社区图书资源与人力资本积累：中国新华书店扩张的证据
-            </a>
-          </div>
-          <div class="paper-meta"><strong>Working Paper (2025)</strong> — <strong>张毅</strong>，翁煜晗，刘倩</div>
-          <div class="paper-abstract">
-            采用队列双重差分策略识别新华书店进入对受教育年限和大学入学率的长期影响，尤其对女性与低教育家庭个体影响更大，是首次系统评估中国书店基础设施长期教育效应的研究。
-          </div>
-        </div>
-
-        <div class="paper-card">
-          <div class="paper-title">
-            <a href="/files/workingpapers/pharma_reform_pharmacies.pdf" target="_blank" rel="noopener">
-              Pharmaceutical Reform and Retail Pharmacy Supply: Evidence from China’s Separation of Prescribing and Dispensing
-            </a>
-          </div>
-          <div class="paper-meta"><strong>Working Paper (2025)</strong> — Yangyang Yu, Ying Zhai, <strong>Yi Zhang</strong></div>
-          <div class="paper-abstract">
-            A central concern in pharmaceutical reform—particularly the separation of prescribing and dispensing—is its potential to reduce access to medicines. This paper provides the first evidence that retail pharmacy supply can expand in response to such reforms. Exploiting the staggered implementation of pharmaceutical reform across counties in China, we show that financial incentives induced by the reform significantly increased the net entry of retail pharmacies—by approximately 1.5 per county (≈20%). The increase was larger in counties where the reform generated stronger financial incentives. The response concentrated in economically and medically better-resourced regions, highlighting potential unintended consequences for equity in access to medicines.
-          </div>
-        </div>
-
-      </article>
+  <div class="paper-card">
+    <div class="paper-title">
+      <a href="/files/research/JAE_2021.pdf" target="_blank" rel="noopener">
+        The impact of parental migration on non-cognitive abilities of left behind children in northwestern China
+      </a>
     </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-content">
-      <div class="footer-social">
-        <a href="https://github.com/zhangyieco" class="social-link" aria-label="GitHub">
-          <i class="fa fa-github"></i>
-        </a>
-        <a href="mailto:zhangyieco@gmail.com" class="social-link" aria-label="Email">
-          <i class="fa fa-envelope"></i>
-        </a>
-        <a href="/files/cv.pdf" class="social-link" aria-label="CV">
-          <i class="fa fa-file"></i>
-        </a>
-      </div>
-      <div class="footer-info">
-        <p>© 2024 Yi Zhang. All rights reserved.</p>
-        <p class="footer-powered">Built with <a href="https://gohugo.io">Hugo</a> and custom CSS.</p>
-      </div>
+    <div class="paper-meta"><strong>Journal of Asian Economics (2021)</strong> — Han Liu, Fang Chang, Hannah Corn, <strong>Yi Zhang</strong>, Yaojiang Shi</div>
+    <div class="paper-abstract">
+      Despite the vast literature surrounding various aspects of left behind children (LBC)’s development in China, very few studies have examined the development of, and impact on their non-cognitive abilities as a result of parental migration. Using survey data consisting of 5002 eighth graders from 160 middle schools in northwestern China, this paper investigates how parental migration affects children’s non-cognitive abilities, as is measured by Big Five components of conscientiousness, extraversion, neuroticism, agreeableness, and openness, as well as children’s grit. We narrow our analysis to long run and short run migration subsamples and use the propensity score matching method to address the potential selection bias issue. Our results show that mother’s migration is particularly harmful to the development of children’s non-cognitive abilities, as mother is usually the primary caregiver and mother’s migration makes less economic contribution to the family. In the long run, LBC with migrant mother tend to have lower levels of conscientiousness and grit; they also have higher level of neuroticism (or lower level of emotional stability). In the short run, when mother migrates, children tend to have lower levels of conscientiousness, agreeableness and openness.
     </div>
-  </footer>
+  </div>
+
+  <div class="paper-card">
+    <div class="paper-title">
+      <a href="/files/research/JAE_2025_peer_effect.pdf" target="_blank" rel="noopener">
+        The peer effect on the academic performance of rural left-behind children
+      </a>
+    </div>
+    <div class="paper-meta"><strong>Journal of Asian Economics (2025) </strong> — Fang Chang, Yajie Wang, Yanan Huo, Songyan Zhang, <strong>Yi Zhang</strong>, Jian Liu</div>
+    <div class="paper-abstract">
+      In the context of China’s dual economic structure, rural left-behind children often face prolonged parental absence, increasing their reliance on peer influence. This paper explores peer effects on math achievement using an instrumental variable approach, based on a sample of 2604 rural primary students in Shaanxi province. The results show that peers’ math performance significantly improves left-behind children’s scores by 0.678 standard deviations, with the strongest influence from their first- and second-best friends. Heterogeneity analysis reveals that peer effects are stronger among left-behind girls, non-boarding students, and those with moderate baseline academic performance. Mechanism analysis suggests that peer influence work through enhanced perceptions of mathematics, increased learning confidence, and improved study habits. These findings highlight the need to address educational challenges faced by left-behind children to enhance rural human capital development.
+    </div>
+  </div>
+  <!-- Chinese -->
+  <h1 class="section-title">Publications (Chinese)</h1>
+
+  <div class="paper-card">
+    <div class="paper-title">
+      <a href="/files/research/LTC_supply_sh.pdf" target="_blank" rel="noopener">
+        长期护理保险与老年照护机构供给：基于S市试点的证据
+      </a>
+    </div>
+    <div class="paper-meta"><strong>社会科学 (2021)</strong> — 余央央，<strong>张毅</strong>，封进</div>
+    <div class="paper-abstract">
+      引导照护供给资源合理配置是长护险制度可持续发展的关键问题之一。文章利用长护险某试点城市1152家照护机构数据，考察待遇给付模式对不同类型照护机构供给的影响。采用双重差分法的实证结果显示，优先针对居家照护提供待遇给付会引导此类机构供给率先增加。进一步，当长护险覆盖对象从城镇职工医保参保人扩大至城乡居民医保参保人时，郊区农村的居家照护机构供给随之增加，集中指数测度结果表明城乡配置不均有所缓解。文章研究表明，长护险对养老服务供给侧改革有积极作用，要进一步优化长护险制度，以提升养老服务供给能力。
+    </div>
+  </div>
+
+  <div class="paper-card">
+    <div class="paper-title">整合型照护与医疗费用控制——基于“认知友好社区”试点的研究</div>
+    <div class="paper-meta"><strong>财经研究 (2024)</strong> — 余央央，翟颖，<strong>张毅</strong></div>
+    <div class="paper-abstract">
+      整合型照护有助于提高医疗服务效率,其成为控制医疗费用过快增长的重要途径。文章利用“认知友好社区”试点,考察这一针对慢性病防治的整合型照护模式对医疗服务利用的影响,并进行福利分析。文章使用某典型城市的老年照护统一需求评估、医保账户等数据,采用双重差分的方法,研究发现“认知友好社区”试点会使失能老人住院概率降低3%。进一步结合长期护理保险制度以及相关的异质性分析,研究发现“认知友好社区”试点对男性、城镇职工医疗保险参保人、中重度失能人群住院次数的影响更为明显。文章的影响机制是通过信息效应改善健康行为和跨部门照护资源协作来提高照护质量。最终福利分析发现,“认知友好社区”试点不仅提高失能老人的健康水平,且具有较好的经济效应。文章研究表明,促进以社区为重点的整合型照护模式发展具有推广示范作用,未来应大力推广跨部门协作。文章结论对于解决老龄化问题和医疗服务体系改革具有一定的参考意义。
+    </div>
+  </div>
+
+  <div class="paper-card">
+    <div class="paper-title">长期护理保险的资源配置效应——基于制度激励与照护机构市场进入的研究</div>
+    <div class="paper-meta"><strong>经济学（季刊） (2025)</strong> — 余央央，<strong>张毅</strong>，封进</div>
+    <div class="paper-abstract">
+      本文从理论上刻画长期护理保险对供方经济激励及市场进入的影响机理,并进行实证检验。研究发现长期护理保险促进医疗类居家机构、养老院供给,不影响提供生活照料的社区机构供给,改善了“重生活照料、轻医疗护理”格局;进一步研究发现待遇水平、报销方式对医疗照护资源的配置能力更强,在促进特定机构供给中呈不同时效性。长期护理保险带来区域配置不均主要是营利性机构更会选择进入发达地区。本文从长期护理保险制度设计的角度为优化照护资源配置提供启示。
+    </div>
+  </div>
+
+  <!-- Working Papers -->
+  <h1 class="section-title">Working Papers</h1>
+
+  <div class="paper-card">
+    <div class="paper-title">
+      <a href="/files/workingpapers/xinhua_bookstore.pdf" target="_blank" rel="noopener">
+        社区图书资源与人力资本积累：中国新华书店扩张的证据
+      </a>
+    </div>
+    <div class="paper-meta"><strong>Working Paper (2025)</strong> — <strong>张毅</strong>，翁煜晗，刘倩</div>
+    <div class="paper-abstract">
+      采用队列双重差分策略识别新华书店进入对受教育年限和大学入学率的长期影响，尤其对女性与低教育家庭个体影响更大，是首次系统评估中国书店基础设施长期教育效应的研究。
+    </div>
+  </div>
+
+  <div class="paper-card">
+    <div class="paper-title">
+      <a href="/files/workingpapers/pharma_reform_pharmacies.pdf" target="_blank" rel="noopener">
+        Pharmaceutical Reform and Retail Pharmacy Supply: Evidence from China’s Separation of Prescribing and Dispensing
+      </a>
+    </div>
+    <div class="paper-meta"><strong>Working Paper (2025)</strong> — Yangyang Yu, Ying Zhai, <strong>Yi Zhang</strong></div>
+    <div class="paper-abstract">
+      A central concern in pharmaceutical reform—particularly the separation of prescribing and dispensing—is its potential to reduce access to medicines. This paper provides the first evidence that retail pharmacy supply can expand in response to such reforms. Exploiting the staggered implementation of pharmaceutical reform across counties in China, we show that financial incentives induced by the reform significantly increased the net entry of retail pharmacies—by approximately 1.5 per county (≈20%). The increase was larger in counties where the reform generated stronger financial incentives. The response concentrated in economically and medically better-resourced regions, highlighting potential unintended consequences for equity in access to medicines.
+    </div>
+  </div>
+
+</main>
+
+<footer class="page-footer">
+  <p>
+    Powered by <a href="https://gohugo.io">Hugo</a> and the
+    <a href="https://github.com/shawnohare/hugo-tufte">Tufte theme</a>.
+  </p>
+  <div class="copyright">
+    <p>&copy; 2024 Yi Zhang. All rights reserved.</p>
+  </div>
+</footer>
+
+</article>
 </div>
 </body>
 </html>
