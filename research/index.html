@@ -87,6 +87,8 @@ body{
 .paper-card {
   border-radius: 12px;
   padding: 28px;
+  margin-bottom: 30px;
+  max-width: 860px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: #ffffff;
@@ -287,13 +289,7 @@ body{
   color: #1e40af;
 }
 
-/* ========= Papers Grid Layout ========= */
-.papers-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin-bottom: 40px;
-}
+
 
 
 
@@ -316,10 +312,6 @@ body{
 
 /* ========= Responsive ========= */
 @media (max-width: 768px) {
-  .papers-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
   .paper-card {
     padding: 20px;
   }
@@ -359,7 +351,6 @@ nav.menu ul li a.active {
   <!-- English Publications -->
   <h2 class="section-subtitle">English Publications</h2>
   
-  <div class="papers-grid">
   <div class="paper-card published">
     <div class="paper-badge badge-published">Published</div>
     <div class="paper-title">
@@ -381,14 +372,6 @@ nav.menu ul li a.active {
       </a>
     </div>
   </div>
-
-  <div class="paper-card published">
-    <div class="paper-badge badge-published">Published</div>
-    <div class="paper-title">
-      <a href="/files/research/JAE_2025_peer_effect.pdf" target="_blank" rel="noopener">
-        The peer effect on the academic performance of rural left-behind children
-      </a>
-    </div>
     <div class="paper-meta">
       <span class="paper-journal">Journal of Asian Economics</span>
       <span class="paper-year">2025</span>
@@ -408,7 +391,6 @@ nav.menu ul li a.active {
   <!-- Chinese Publications -->
   <h2 class="section-subtitle">Chinese Publications</h2>
   
-  <div class="papers-grid">
   <div class="paper-card published">
     <div class="paper-badge badge-published">Published</div>
     <div class="paper-title">
@@ -465,21 +447,19 @@ nav.menu ul li a.active {
       <span class="paper-year">2025</span>
       <span class="paper-authors">余央央，<strong>张毅</strong>，封进</span>
     </div>
-    <div class="paper-abstract">
-      本文从理论上刻画长期护理保险对供方经济激励及市场进入的影响机理,并进行实证检验。研究发现长期护理保险促进医疗类居家机构、养老院供给,不影响提供生活照料的社区机构供给,改善了"重生活照料、轻医疗护理"格局;进一步研究发现待遇水平、报销方式对医疗照护资源的配置能力更强,在促进特定机构供给中呈不同时效性。长期护理保险带来区域配置不均主要是营利性机构更会选择进入发达地区。本文从长期护理保险制度设计的角度为优化照护资源配置提供启示。
-    </div>
-    <div class="paper-links">
-      <a href="/files/research/长护险资源配置效应.pdf" class="btn btn-outline-primary my-1 mr-1" target="_blank" rel="noopener">
-        PDF
-      </a>
-    </div>
-  </div>
-  </div>
+     <div class="paper-abstract">
+       本文从理论上刻画长期护理保险对供方经济激励及市场进入的影响机理,并进行实证检验。研究发现长期护理保险促进医疗类居家机构、养老院供给,不影响提供生活照料的社区机构供给,改善了"重生活照料、轻医疗护理"格局;进一步研究发现待遇水平、报销方式对医疗照护资源的配置能力更强,在促进特定机构供给中呈不同时效性。长期护理保险带来区域配置不均主要是营利性机构更会选择进入发达地区。本文从长期护理保险制度设计的角度为优化照护资源配置提供启示。
+     </div>
+     <div class="paper-links">
+       <a href="/files/research/长护险资源配置效应.pdf" class="btn btn-outline-primary my-1 mr-1" target="_blank" rel="noopener">
+         PDF
+       </a>
+     </div>
+   </div>
 
   <!-- Working Papers Section -->
   <h1 class="section-title">Working Papers</h1>
   
-  <div class="papers-grid">
   <div class="paper-card working">
     <div class="paper-badge badge-working">Working Paper</div>
     <div class="paper-title">
@@ -540,12 +520,11 @@ nav.menu ul li a.active {
       Using county-level data on facility-based eldercare providers in China, we examine how China’s Long-Term Care Insurance (LTCI) reform affects provider behavior along the intensive margin. Employing both parametric and nonparametric event-study approaches, we estimate the dynamic effects of LTCI on institutional capacity, workforce composition, and utilization. We find that the reform significantly increases both the number of eldercare institutions and overall bed capacity. It also reshapes staffing structure by expanding employment among workers with lower educational attainment, middle-aged and older workers, and those with lower professional qualifications. However, bed capacity grows more rapidly than institutional residency, resulting in a decline in bed occupancy rates. This divergence reveals a supply–demand imbalance: capacity outpaces realized demand, which may be driven by supply-side incentives that fuel excess capacity and workforce changes that undermine perceived quality and suppress demand.
     </div>
     <div class="paper-links">
-      <a href="/files/workingpapers/ltci_beds_occupancy.pdf" class="btn btn-outline-primary my-1 mr-1" target="_blank" rel="noopener">
-        PDF
-      </a>
-    </div>
-  </div>
-  </div>
+       <a href="/files/workingpapers/ltci_beds_occupancy.pdf" class="btn btn-outline-primary my-1 mr-1" target="_blank" rel="noopener">
+         PDF
+       </a>
+     </div>
+   </div>
 
 </main>
 
