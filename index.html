@@ -863,6 +863,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+function toggleAbstract(button) {
+  const abstract = button.parentElement.querySelector('.paper-abstract');
+  if (abstract.classList.contains('expanded')) {
+    abstract.classList.remove('expanded');
+    button.textContent = 'Show Abstract';
+  } else {
+    abstract.classList.add('expanded');
+    button.textContent = 'Hide Abstract';
+  }
+}
 </script>
 
 </head>
