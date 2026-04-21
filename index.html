@@ -579,99 +579,160 @@ document.addEventListener('DOMContentLoaded', function() {
 </head>
 
 <body>
-<div id="layout" class="pure-g">
-<article class="pure-u-1">
-<header class="brand">
-  <h1>Yi Zhang</h1>
-  <h2>Ph.D. candidate</h2>
-</header>
+  <!-- Mobile menu toggle -->
+  <button class="menu-toggle" aria-label="Toggle menu">
+    <span class="hamburger"></span>
+  </button>
 
-<main class="content">
-  <div class="about-container">
-    <!-- Sidebar Navigation -->
-    <aside class="about-sidebar">
-       <h3 class="sidebar-title">Navigation</h3>
-      <nav class="sidebar-nav">
-        <a href="/" class="sidebar-link" data-section="about">
-          <i class="fa fa-home"></i> About
-        </a>
-        <a href="/files/cv2026.pdf" class="sidebar-link" target="_blank" rel="noopener">
-          <i class="fa fa-file"></i> CV
-        </a>
-        <a href="/research" class="sidebar-link" data-section="research">
-          <i class="fa fa-bar-chart"></i> Publications & Working Papers
-        </a>
-        <a href="/notes" class="sidebar-link" data-section="notes">
-          <i class="fa fa-pencil"></i> Notes
-        </a>
-        <a href="/contact" class="sidebar-link" data-section="contact">
-          <i class="fa fa-envelope"></i> Contact
-        </a>
-      </nav>
-      
-      <!-- Profile Image in Sidebar -->
-      <img src="/zhangyi2026.jpg" alt="Yi Zhang" class="profile-img">
-      
-      <!-- Quick contact info -->
-      <div class="contact-info">
-        <h3>Contact</h3>
-        <ul>
-          <li><i class="fa fa-envelope"></i> zhangyieco@gmail.com</li>
-          <li><i class="fa fa-github"></i> <a href="https://github.com/zhangyieco" target="_blank">github.com/zhangyieco</a></li>
-        </ul>
+  <div class="layout-container">
+    <!-- Left Navigation Sidebar (fixed on desktop) -->
+    <aside class="left-sidebar">
+      <div class="sidebar-inner">
+        <header class="brand">
+          <h1>Yi Zhang</h1>
+          <h2>Ph.D. candidate</h2>
+        </header>
+        
+        <!-- Profile Image -->
+        <img src="/zhangyi2026.jpg" alt="Yi Zhang" class="profile-img">
+        
+        <!-- Navigation Menu -->
+        <nav class="sidebar-nav">
+          <ul>
+            <li><a href="#about" class="sidebar-link active" data-section="about">
+              <i class="fa fa-home"></i> About
+            </a></li>
+            <li><a href="#research" class="sidebar-link" data-section="research">
+              <i class="fa fa-bar-chart"></i> Research
+            </a></li>
+            <li><a href="#publications" class="sidebar-link" data-section="publications">
+              <i class="fa fa-file-text"></i> Publications
+            </a></li>
+            <li><a href="#working-papers" class="sidebar-link" data-section="working-papers">
+              <i class="fa fa-file"></i> Working Papers
+            </a></li>
+            <li><a href="#teaching" class="sidebar-link" data-section="teaching">
+              <i class="fa fa-graduation-cap"></i> Teaching
+            </a></li>
+            <li><a href="#cv" class="sidebar-link" data-section="cv">
+              <i class="fa fa-file-pdf-o"></i> CV
+            </a></li>
+            <li><a href="#contact" class="sidebar-link" data-section="contact">
+              <i class="fa fa-envelope"></i> Contact
+            </a></li>
+          </ul>
+        </nav>
+        
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Contact</h3>
+          <ul>
+            <li><i class="fa fa-envelope"></i> zhangyieco@gmail.com</li>
+            <li><i class="fa fa-github"></i> <a href="https://github.com/zhangyieco" target="_blank">github.com/zhangyieco</a></li>
+          </ul>
+        </div>
       </div>
     </aside>
-    
-    <!-- Main Content -->
-    <div class="about-content">
-      <h1 class="section-title">About</h1>
-      
-      <div class="bio-text">
-        <p>Welcome. I am a Ph.D. candidate in Social Security at Shanghai University of Finance and Economics (SUFE,上海财经大学).</p>
-        
-        <p>My research interests are <strong>health economics</strong> and <strong>industrial organization</strong>.</p>
-        
-        <p>My dissertation discusses the impact of China's long-term care insurance on the entry decisions of service providers.</p>
-        
-        <p>I employ empirical methods, including difference-in-differences, instrumental variables, and structural models, to study policy evaluation and market dynamics in healthcare and long-term care markets.</p>
-        
-        <p>My work has been published in peer-reviewed journals such as <em>Journal of Asian Economics</em>, <em>社会科学</em>, <em>财经研究</em>, and <em>经济学（季刊）</em>.</p>
-        
-        <p>You can find my full list of publications and working papers in the <a href="/research">Publications & Working Papers</a> section.</p>
-      </div>
-      
-      <div class="contact-info" style="margin-top: 40px;">
-        <h3>Research Interests</h3>
-        <ul>
-          <li><strong>Health Economics</strong>: Long-term care insurance, healthcare reform, pharmaceutical markets</li>
-          <li><strong>Industrial Organization</strong>: Market entry, competition, regulation</li>
-          <li><strong>Applied Microeconomics</strong>: Policy evaluation, program impact, rural development</li>
-        </ul>
-      </div>
-      
-      <div class="contact-info" style="margin-top: 40px;">
-        <h3>Education</h3>
-        <ul>
-          <li><strong>Ph.D. in Social Security</strong>, Shanghai University of Finance and Economics (Expected 2026)</li>
-          <li><strong>M.A. in Economics</strong>, Shanghai University of Finance and Economics (2021)</li>
-          <li><strong>B.A. in Economics</strong>, Shanghai University of Finance and Economics (2018)</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</main>
 
-<footer class="page-footer">
-  <p>
-    Powered by <a href="https://gohugo.io">Hugo</a> and the
-    <a href="https://github.com/shawnohare/hugo-tufte">Tufte theme</a>.
-  </p>
-  <div class="copyright">
-    <p>&copy; 2024 Yi Zhang. All rights reserved.</p>
-  </div>
-</footer>
+    <!-- Main Content Area (scrollable) -->
+    <main class="main-content">
+      <!-- About Section -->
+      <section id="about" class="content-section">
+        <h1 class="section-title">About</h1>
+        <div class="bio-text">
+          <p>Welcome. I am a Ph.D. candidate in Social Security at Shanghai University of Finance and Economics (SUFE,上海财经大学).</p>
+          <p>My research interests are <strong>health economics</strong> and <strong>industrial organization</strong>.</p>
+          <p>My dissertation discusses the impact of China's long-term care insurance on the entry decisions of service providers.</p>
+          <p>I employ empirical methods, including difference-in-differences, instrumental variables, and structural models, to study policy evaluation and market dynamics in healthcare and long-term care markets.</p>
+          <p>My work has been published in peer-reviewed journals such as <em>Journal of Asian Economics</em>, <em>社会科学</em>, <em>财经研究</em>, and <em>经济学（季刊）</em>.</p>
+          <p>You can find my full list of publications and working papers in the <a href="#publications">Publications</a> and <a href="#working-papers">Working Papers</a> sections.</p>
+        </div>
+        
+        <div class="contact-info" style="margin-top: 40px;">
+          <h3>Research Interests</h3>
+          <ul>
+            <li><strong>Health Economics</strong>: Long-term care insurance, healthcare reform, pharmaceutical markets</li>
+            <li><strong>Industrial Organization</strong>: Market entry, competition, regulation</li>
+            <li><strong>Applied Microeconomics</strong>: Policy evaluation, program impact, rural development</li>
+          </ul>
+        </div>
+        
+        <div class="contact-info" style="margin-top: 40px;">
+          <h3>Education</h3>
+          <ul>
+            <li><strong>Ph.D. in Social Security</strong>, Shanghai University of Finance and Economics (Expected 2026)</li>
+            <li><strong>M.A. in Economics</strong>, Shanghai University of Finance and Economics (2021)</li>
+            <li><strong>B.A. in Economics</strong>, Shanghai University of Finance and Economics (2018)</li>
+          </ul>
+        </div>
+      </section>
 
-</article>
-</div>
+      <!-- Research Section (Overview) -->
+      <section id="research" class="content-section">
+        <h1 class="section-title">Research</h1>
+        <p>My research focuses on health economics and industrial organization, with particular emphasis on long-term care insurance, healthcare reform, and pharmaceutical markets. I use empirical methods including difference-in-differences, instrumental variables, and structural models to study policy evaluation and market dynamics.</p>
+        <p>Below you can find my publications and working papers.</p>
+      </section>
+
+      <!-- Publications Section -->
+      <section id="publications" class="content-section">
+        <h1 class="section-title">Publications</h1>
+        <p>Content from research page will be inserted here.</p>
+      </section>
+
+      <!-- Working Papers Section -->
+      <section id="working-papers" class="content-section">
+        <h1 class="section-title">Working Papers</h1>
+        <p>Content from research page will be inserted here.</p>
+      </section>
+
+      <!-- Teaching Section -->
+      <section id="teaching" class="content-section">
+        <h1 class="section-title">Teaching</h1>
+        <p>Teaching experience and materials will be added here.</p>
+      </section>
+
+      <!-- CV Section -->
+      <section id="cv" class="content-section">
+        <h1 class="section-title">Curriculum Vitae</h1>
+        <p>You can download my full CV as a PDF:</p>
+        <p><a href="/files/cv2026.pdf" class="paper-link pdf" target="_blank"><i class="fa fa-download"></i> Download CV (PDF)</a></p>
+        <h3 class="section-subtitle">Selected Highlights</h3>
+        <ul>
+          <li>Ph.D. candidate in Social Security, Shanghai University of Finance and Economics (Expected 2026)</li>
+          <li>Published in Journal of Asian Economics, 社会科学, 财经研究, 经济学（季刊）</li>
+          <li>Research interests: health economics, industrial organization, long-term care insurance</li>
+          <li>Methodologies: difference-in-differences, instrumental variables, structural models, policy evaluation</li>
+        </ul>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="content-section">
+        <h1 class="section-title">Contact</h1>
+        <div class="contact-info">
+          <p>You can reach me via email or GitHub:</p>
+          <ul>
+            <li><i class="fa fa-envelope"></i> <a href="mailto:zhangyieco@gmail.com">zhangyieco@gmail.com</a></li>
+            <li><i class="fa fa-github"></i> <a href="https://github.com/zhangyieco" target="_blank">github.com/zhangyieco</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <p>
+          Powered by <a href="https://gohugo.io">Hugo</a> and the
+          <a href="https://github.com/shawnohare/hugo-tufte">Tufte theme</a>.
+        </p>
+        <div class="copyright">
+          <p>&copy; 2024 Yi Zhang. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- JavaScript for interactive features -->
+  <script>
+    // Will be added later
+  </script>
 </body>
 </html>
