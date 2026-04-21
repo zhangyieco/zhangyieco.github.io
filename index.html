@@ -976,7 +976,122 @@ document.addEventListener('DOMContentLoaded', function() {
 
   <!-- JavaScript for interactive features -->
   <script>
-    // Will be added later
+    document.addEventListener('DOMContentLoaded', function() {
+      // Mobile menu toggle
+      const menuToggle = document.querySelector('.menu-toggle');
+      const leftSidebar = document.querySelector('.left-sidebar');
+      
+      if (menuToggle) {
+        menuToggle.addEventListener('click', function() {
+          this.classList.toggle('active');
+          leftSidebar.classList.toggle('active');
+        });
+      }
+      
+      // Close mobile menu when clicking on a link
+      const sidebarLinks = document.querySelectorAll('.sidebar-link');
+      sidebarLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          if (window.innerWidth <= 768) {
+            menuToggle.classList.remove('active');
+            leftSidebar.classList.remove('active');
+          }
+        });
+      });
+      
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            e.preventDefault();
+            
+            // Update URL hash without scrolling (to allow smooth scroll)
+            history.pushState(null, null, targetId);
+            
+            // Update active link
+            updateActiveLink(targetId.substring(1));
+            
+            // Smooth scroll to target
+            window.scrollTo({
+              top: targetElement.offsetTop - 100,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+      
+      // Update active link on scroll
+      const sections = document.querySelectorAll('.content-section');
+      const navLinks = document.querySelectorAll('.sidebar-link');
+      
+      function updateActiveLink(sectionId) {
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + sectionId) {
+            link.classList.add('active');
+          }
+        });
+      }
+      
+      function onScroll() {
+        let currentSection = '';
+        const scrollPosition = window.scrollY + 150;
+        
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            currentSection = section.getAttribute('id');
+          }
+        });
+        
+        if (currentSection) {
+          updateActiveLink(currentSection);
+        }
+      }
+      
+      window.addEventListener('scroll', onScroll);
+      
+      // Initialize active link based on URL hash
+      const hash = window.location.hash;
+      if (hash) {
+        const targetElement = document.querySelector(hash);
+        if (targetElement) {
+          setTimeout(() => {
+            window.scrollTo({
+              top: targetElement.offsetTop - 100,
+              behavior: 'smooth'
+            });
+            updateActiveLink(hash.substring(1));
+          }, 100);
+        }
+      } else {
+        // Set default active link to About
+        updateActiveLink('about');
+      }
+      
+      // Handle browser back/forward buttons
+      window.addEventListener('popstate', function() {
+        const hash = window.location.hash;
+        if (hash) {
+          const targetElement = document.querySelector(hash);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 100,
+              behavior: 'smooth'
+            });
+            updateActiveLink(hash.substring(1));
+          }
+        } else {
+          updateActiveLink('about');
+        }
+      });
+    });
   </script>
 </body>
 </html>
