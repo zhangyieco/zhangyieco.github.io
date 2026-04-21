@@ -905,44 +905,26 @@ document.addEventListener('DOMContentLoaded', function() {
 </head>
 
 <body>
-  <!-- Mobile menu toggle -->
-  <button class="menu-toggle" aria-label="Toggle menu">
-    <span class="hamburger"></span>
-  </button>
-
-  <div class="layout-container">
-    <!-- Left Navigation Sidebar (fixed on desktop) -->
-    <aside class="left-sidebar">
-      <div class="sidebar-inner">
-        <header class="brand">
-          <h1>Yi Zhang</h1>
-          <h2>Ph.D.</h2>
-        </header>
-        
-        <!-- Profile Image -->
-        <img src="/zhangyi2026.jpg" alt="Yi Zhang" class="profile-img">
-        
-        <!-- Navigation Menu -->
-        <nav class="sidebar-nav">
-          <ul>
-            <li><a href="#about" class="sidebar-link active" data-section="about">
-              <i class="fa fa-home"></i> About
-            </a></li>
-            <li><a href="#publications" class="sidebar-link" data-section="publications">
-              <i class="fa fa-file-text"></i> Publications
-            </a></li>
-            <li><a href="#working-papers" class="sidebar-link" data-section="working-papers">
-              <i class="fa fa-file"></i> Working Papers
-            </a></li>
-
-          </ul>
-        </nav>
-
+  <!-- Top Navigation Bar -->
+  <header class="top-navbar">
+    <div class="navbar-container">
+      <div class="navbar-brand">
+        <h1 class="navbar-name">Yi Zhang</h1>
+        <span class="navbar-title">Ph.D.</span>
       </div>
-    </aside>
+      <nav class="navbar-nav">
+        <ul>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#publications" class="nav-link">Publications</a></li>
+          <li><a href="#working-papers" class="nav-link">Working Papers</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Main Content Area (scrollable) -->
-    <main class="main-content">
+  <!-- Main Content Area -->
+  <main class="main-content">
       <!-- About Section -->
       <section id="about" class="content-section">
         <h1 class="section-title">About</h1>
